@@ -1,0 +1,22 @@
+@import '/index.css';
+
+.avatar {
+  border-radius: 50%;
+  background: lightslategray;
+}
+
+.avatar-xs {
+  width: 1.8rem;
+}
+
+.avatar-sm {
+  width: 2.5rem;
+}
+
+.avatar-md {
+  width: 3.12rem;
+}
+
+.avatar-lg {
+  width: 3.75rem;
+}

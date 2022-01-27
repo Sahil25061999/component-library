@@ -1,0 +1,19 @@
+@import '/index.css';
+
+.alert {
+  width: max-content;
+  border-radius: 2rem;
+  /* padding: 10px 100px 10px 15px; */
+  padding: 10px 50px;
+  background: rgb(63, 63, 63);
+  color: white;
+}
+
+.alert-success {
+  background: rgb(214, 214, 214);
+  color: black;
+}
+
+.alert-failure {
+  background: rgb(0, 0, 0);
+}
