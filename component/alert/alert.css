@@ -2,18 +2,24 @@
 
 .alert {
   width: max-content;
-  border-radius: 2rem;
+  border-radius: 6px;
   /* padding: 10px 100px 10px 15px; */
   padding: 10px 50px;
-  background: rgb(63, 63, 63);
-  color: white;
+  background: var(--primary-color);
+  color: var(--primary-text-color);
 }
 
 .alert-success {
-  background: rgb(214, 214, 214);
-  color: black;
+  background: var(--success-color);
+  color: var(--secondary-text-color);
 }
 
 .alert-failure {
-  background: rgb(0, 0, 0);
+  background: var(--failure-color);
+  color: var(--primary-text-color);
+}
+
+.alert-warning {
+  background: var(--warning-color);
+  color: var(--secondary-text-color);
 }

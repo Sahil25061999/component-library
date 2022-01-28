@@ -2,7 +2,25 @@
 @import 'component/avatar/avatar.css';
 @import 'component/alert/alert.css';
 
+:root {
+  --primary-color: hsl(234, 91%, 69%);
+  --secondary-color: hsl(262, 45%, 35%);
+  --warning-color: hsl(50, 94%, 69%);
+  --success-color: hsl(120, 100%, 76%);
+  --failure-color: hsl(0, 92%, 66%);
+  --active-color: hsl(234, 43%, 27%);
+  --hover-color: hsal(234, 98%, 70%);
+
+  --primary-text-color: white;
+  --secondary-text-color: black;
+  /* --accent-text-color: black; */
+}
+
 /* reset css */
+
+section {
+  display: flex;
+}
 
 * {
   margin: 0;
