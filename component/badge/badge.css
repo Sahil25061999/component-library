@@ -1,0 +1,41 @@
+@import '/index.css';
+
+:root {
+  --default-badge-color: hsl(0, 82%, 59%);
+  --badge-online-color: hsl(120, 96%, 59%);
+  --badge-offline-color: hsl(240, 2%, 39%);
+}
+
+.badge-container {
+  position: relative;
+}
+
+.badge-icon {
+  font-size: 30px;
+}
+
+.badge {
+  height: 1rem;
+  width: 1rem;
+  position: absolute;
+  right: -10%;
+  top: -30%;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--default-badge-color);
+}
+
+.badge-avatar {
+  top: 65%;
+  border: 3px solid var(--light-mode);
+}
+
+.badge-online {
+  background-color: var(--badge-online-color);
+}
+
+.badge-offline {
+  background-color: var(--badge-offline-color);
+}
