@@ -1,0 +1,50 @@
+@import '/index.css';
+
+.alert {
+  width: max-content;
+  border-radius: 0.5rem;
+  width: 70%;
+  padding: 1rem;
+  color: var(--secondary-text-color);
+  margin: 0.2rem;
+}
+
+.alert-default {
+  background-color: var(--primary-color);
+}
+
+.alert-success {
+  background: var(--success-color);
+}
+
+.alert-failure {
+  background: var(--failure-color);
+}
+
+.alert-warning {
+  background: var(--warning-color);
+}
+
+/** Alert outline **/
+
+.alert-default-outline {
+  border: 3px solid var(--primary-color);
+}
+
+.alert-success-outline {
+  border: 3px solid var(--success-color);
+}
+
+.alert-failure-outline {
+  border: 3px solid var(--failure-color);
+}
+
+.alert-warning-outline {
+  border: 3px solid var(--warning-color);
+}
+
+.alert-link {
+  opacity: 0.6;
+  font-weight: 800;
+  text-decoration: underline;
+}

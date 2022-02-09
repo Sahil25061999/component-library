@@ -1,0 +1,52 @@
+@import '/index.css';
+
+.avatar {
+  border-radius: 50%;
+  background: var(--primary-color);
+  overflow: hidden;
+}
+
+.avatar-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.avatar-initials {
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--accent-color);
+}
+
+/* AVATAR SIZES */
+
+.avatar-xs {
+  width: 2rem;
+  height: 2rem;
+  font-size: 12px;
+}
+
+.avatar-sm {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.avatar-md {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.25rem;
+}
+
+.avatar-lg {
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+}
+
+.avatar-xlg {
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.75rem;
+}
