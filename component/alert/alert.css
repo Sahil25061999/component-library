@@ -2,8 +2,9 @@
 
 .alert {
   width: max-content;
-  border-radius: 6px;
-  /* padding: 10px 100px 10px 15px; */
+  border-radius: 0.5rem;
+  width: 70%;
+  padding: 10px 100px 10px 15px;
   padding: 10px 50px;
   background: var(--primary-color);
   color: var(--primary-text-color);
