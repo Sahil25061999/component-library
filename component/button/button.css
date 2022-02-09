@@ -1,0 +1,73 @@
+@import '/index.css';
+
+.btn {
+  border: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--primary-text-color);
+}
+
+.btn-outlined {
+  border-style: inset;
+  border: 3px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.btn-icon {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.btn-link {
+  color: var(--primary-color);
+}
+
+.btn-only-icon {
+  /* padding: 0.5rem; */
+  padding: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+
+.btn:hover {
+  background: var(--hover-color);
+  color: var(--primary-text-color);
+}
+
+.btn-outlined:hover {
+  background-color: var(--secondary-color);
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+.btn-float {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  background-color: var(--accent-color);
+}
+
+.btn-float:hover {
+  background-color: var(--accent-color);
+  box-shadow: 4px 8px 32px var(--accent-color);
+}
+
+.btn-only-icon:hover {
+  background-color: var(--accent-color);
+}

@@ -2,7 +2,7 @@
 @import 'component/avatar/avatar.css';
 @import 'component/alert/alert.css';
 @import 'component/badge/badge.css';
-
+@import 'component/button/button.css';
 :root {
   --primary-color: hsl(234, 74%, 74%);
   --secondary-color: hsl(262, 45%, 35%);
@@ -15,7 +15,7 @@
   --dark-mode: rgb(56, 56, 56);
   --primary-text-color: white;
   --secondary-text-color: black;
-  /* --accent-text-color: black; */
+  --accent-color: hsl(50, 93%, 72%);
 }
 
 /* reset css */
