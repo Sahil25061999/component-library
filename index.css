@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
 @import 'component/avatar/avatar.css';
 @import 'component/alert/alert.css';
+@import 'component/badge/badge.css';
 
 :root {
   --primary-color: hsl(234, 74%, 74%);
@@ -9,8 +10,9 @@
   --success-color: hsl(120, 96%, 74%);
   --failure-color: hsl(0, 100%, 76%);
   --active-color: hsl(234, 43%, 27%);
-  --hover-color: hsal(234, 98%, 70%);
-
+  --hover-color: hsl(234, 98%, 70%);
+  --light-mode: white;
+  --dark-mode: rgb(56, 56, 56);
   --primary-text-color: white;
   --secondary-text-color: black;
   /* --accent-text-color: black; */
