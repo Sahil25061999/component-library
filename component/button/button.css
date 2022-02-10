@@ -7,6 +7,7 @@
   border-radius: 4px;
   cursor: pointer;
   background: transparent;
+  color: var(--secondary-text-color);
 }
 
 /** button style **/
@@ -62,6 +63,10 @@
   color: var(--accent-color);
 }
 
+.link-active {
+  color: var(--active-color);
+}
+
 /** floating button **/
 
 .btn-float,
@@ -71,6 +76,10 @@
   width: 3rem;
   border-radius: 50%;
   font-size: 1.2rem;
+}
+
+.btn-float {
+  box-shadow: 4px 8px 32px rgba(0, 0, 0, 0.2);
 }
 
 /** icon button **/
@@ -101,6 +110,9 @@
   background-color: var(--accent-hover-color);
 }
 
+.btn-link-primary:hover,
+.btn-link-secondary:hover,
+.btn-link-accented:hover,
 .btn-link:hover {
   text-decoration: underline;
 }
