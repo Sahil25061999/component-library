@@ -9,6 +9,8 @@
   background: transparent;
 }
 
+/** button style **/
+
 .btn-primary {
   background-color: var(--primary-color);
 }
@@ -18,56 +20,87 @@
   color: var(--primary-text-color);
 }
 
-.btn-outlined {
-  border-style: inset;
+.btn-accented {
+  background-color: var(--accent-color);
+}
+
+/** outlined button **/
+
+.btn-outline-primary {
+  border: 3px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline-secondary {
   border: 3px solid var(--secondary-color);
   color: var(--secondary-color);
 }
+
+.btn-outline-accented {
+  border: 3px solid var(--accent-color);
+  color: var(--secondary-text-color);
+}
+
+/** button with icons **/
 
 .btn-icon {
   display: inline-block;
   margin-right: 4px;
 }
 
-.btn-link {
+/** link button **/
+
+.btn-link-primary {
   color: var(--primary-color);
 }
 
+.btn-link-secondary {
+  color: var(--secondary-color);
+}
+
+.btn-link-accented {
+  color: var(--accent-color);
+}
+
+/** floating button **/
+
+.btn-float,
 .btn-only-icon {
-  /* padding: 0.5rem; */
   padding: 0;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
   font-size: 1.2rem;
 }
+
+/** icon button **/
+
+.btn-only-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+/** button hover style **/
 
 .btn:hover {
   background: var(--hover-color);
   color: var(--primary-text-color);
 }
 
-.btn-outlined:hover {
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+}
+
+.btn-outline-secondary:hover {
   background-color: var(--secondary-color);
+}
+
+.btn-outline-accented:hover,
+.btn-accented:hover,
+.btn-link-accented:hover {
+  background-color: var(--accent-hover-color);
 }
 
 .btn-link:hover {
   text-decoration: underline;
-}
-
-.btn-float {
-  height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
-  font-size: 1.2rem;
-  background-color: var(--accent-color);
-}
-
-.btn-float:hover {
-  background-color: var(--accent-color);
-  box-shadow: 4px 8px 32px var(--accent-color);
-}
-
-.btn-only-icon:hover {
-  background-color: var(--accent-color);
 }
