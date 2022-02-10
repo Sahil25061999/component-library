@@ -3,6 +3,8 @@
 @import 'component/alert/alert.css';
 @import 'component/badge/badge.css';
 @import 'component/button/button.css';
+@import 'component/card/card.css';
+
 :root {
   --primary-color: hsl(234, 74%, 74%);
   --secondary-color: hsl(262, 45%, 35%);
@@ -53,4 +55,33 @@ a {
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+/* utility classes*/
+
+.d-flex {
+  display: flex;
+}
+
+.margin-r-5 {
+  margin-right: 5px;
+}
+
+.margin-l-5 {
+  margin-left: 5px;
+}
+
+.margin-t-5 {
+  margin-top: 5px;
+}
+.margin-b-5 {
+  margin-bottom: 5px;
+}
+
+.small-text {
+  font-size: 12px;
+}
+
+.shadow {
+  box-shadow: 4px 8px 32px rgba(0, 0, 0, 0.2);
 }

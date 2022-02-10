@@ -27,9 +27,41 @@
   background-color: var(--default-badge-color);
 }
 
+.badge-text {
+  width: max-content;
+  height: fit-content;
+  padding: 4px 6px;
+  margin-left: 6px;
+  border-radius: 0.4rem;
+  background-color: var(--primary-color);
+  font-weight: bold;
+}
+
+.badge-sm {
+  font-size: 12px;
+  border-radius: 0.2rem;
+}
+
+.badge-md {
+  font-size: 1.2rem;
+}
+
+.badge-lg {
+  font-size: 1.5rem;
+}
+
 .badge-avatar {
   top: 65%;
   border: 3px solid var(--light-mode);
+}
+
+.badge-secondary {
+  background-color: var(--secondary-color);
+  color: var(--primary-text-color);
+}
+
+.badge-accent {
+  background-color: var(--accent-color);
 }
 
 .badge-online {

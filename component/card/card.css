@@ -1,0 +1,100 @@
+@import '/index.css';
+
+.card {
+  width: 20rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  flex-direction: column;
+  margin: 0.8rem;
+  position: relative;
+  box-shadow: 4px 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.border {
+  border: 3px solid black;
+}
+
+.image-container {
+  height: 15rem;
+}
+
+.close {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  height: 2rem;
+  width: 2rem;
+  background-color: white;
+  z-index: 1000;
+}
+
+.card-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.card-head {
+  margin: 10px 0;
+}
+
+.card-head,
+.card-foot,
+.card-content {
+  padding: 0 1rem;
+  margin-bottom: 10px;
+}
+
+.card-subheading {
+  font-size: 14px;
+}
+
+.card-og-price {
+  text-decoration: line-through;
+}
+
+.card-foot .btn-only-icon {
+  margin-left: auto;
+}
+
+.card-vertical {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 40rem;
+}
+
+.card-vertical .image-container {
+  grid-row: 1 / span 3;
+}
+
+.card-vertical .card-content {
+  grid-column: 2 / span 3;
+}
+
+.card-vertical .card-foot {
+  grid-column: 2 / span 3;
+  align-items: center;
+}
+
+.card-text-overlay .card-image {
+  position: relative;
+  z-index: -1;
+}
+
+.card-text-overlay .image-container {
+  background-image: linear-gradient(
+    to top,
+    rgb(0, 0, 0),
+    rgba(0, 0, 0, 0.466),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.card-text-overlay .card-head {
+  margin-top: -13%;
+  color: var(--primary-text-color);
+}
+
+.card-text-overlay .card-head .badge-text {
+  color: var(--secondary-text-color);
+}

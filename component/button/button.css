@@ -1,28 +1,32 @@
 @import '/index.css';
 
 .btn {
-  border: none;
+  border: 3px solid transparent;
   font-weight: 600;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
   background: transparent;
   color: var(--secondary-text-color);
+  margin: 2px;
 }
 
 /** button style **/
 
 .btn-primary {
   background-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .btn-secondary {
   background-color: var(--secondary-color);
   color: var(--primary-text-color);
+  border-color: var(--secondary-color);
 }
 
 .btn-accented {
   background-color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /** outlined button **/
@@ -94,6 +98,7 @@
 .btn:hover {
   background: var(--hover-color);
   color: var(--primary-text-color);
+  border-color: var(--hover-color);
 }
 
 .btn-outline-primary:hover {
@@ -101,6 +106,7 @@
 }
 
 .btn-outline-secondary:hover {
+  border-color: var(--secondary-color);
   background-color: var(--secondary-color);
 }
 
@@ -108,6 +114,7 @@
 .btn-accented:hover,
 .btn-link-accented:hover {
   background-color: var(--accent-hover-color);
+  border-color: var(--accent-hover-color);
 }
 
 .btn-link-primary:hover,
