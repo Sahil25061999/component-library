@@ -10,10 +10,6 @@
   box-shadow: 4px 8px 32px rgba(0, 0, 0, 0.2);
 }
 
-.border {
-  border: 3px solid black;
-}
-
 .image-container {
   height: 15rem;
 }
@@ -76,12 +72,8 @@
   align-items: center;
 }
 
-.card-text-overlay .card-image {
-  position: relative;
-  z-index: -1;
-}
-
-.card-text-overlay .image-container {
+.card-text-overlay {
+  color: var(--primary-text-color);
   background-image: linear-gradient(
     to top,
     rgb(0, 0, 0),
@@ -90,9 +82,10 @@
   );
 }
 
-.card-text-overlay .card-head {
-  margin-top: -13%;
-  color: var(--primary-text-color);
+.card-text-overlay .card-image {
+  position: relative;
+  z-index: -1;
+  height: fit-content;
 }
 
 .card-text-overlay .card-head .badge-text {
