@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--accent-color);
+  color: var(--secondary-text-color);
 }
 
 /* AVATAR SIZES */
