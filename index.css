@@ -5,6 +5,7 @@
 @import 'component/badge/badge.css';
 @import 'component/button/button.css';
 @import 'component/card/card.css';
+@import 'component/image/image.css';
 
 :root {
   --primary-color: hsl(234, 74%, 74%);
