@@ -1,0 +1,104 @@
+@import '/index.css';
+
+.card {
+  width: 20rem;
+  height: 26.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  flex-direction: column;
+  margin: 0.8rem;
+  position: relative;
+  box-shadow: 4px 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+  height: 15rem;
+}
+
+.close {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  height: 2rem;
+  width: 2rem;
+  background-color: white;
+  z-index: 1000;
+}
+
+.card-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.card-head {
+  margin: 10px 0;
+}
+
+.card-content p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-head,
+.card-foot,
+.card-content {
+  padding: 0 1rem;
+  margin-bottom: 10px;
+}
+
+.card-subheading {
+  font-size: 14px;
+}
+
+.card-og-price {
+  text-decoration: line-through;
+}
+
+.card-foot .btn-only-icon {
+  margin-left: auto;
+}
+
+.card-horizontal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 40rem;
+  max-height: 240px;
+}
+
+.card-horizontal .image-container {
+  grid-row: 1 / span 3;
+}
+
+.card-horizontal .card-content {
+  grid-column: 2 / span 3;
+}
+
+.card-horizontal .card-foot {
+  grid-column: 2 / span 3;
+  align-items: center;
+}
+
+.card-horizontal .card-content p {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-text-overlay {
+  position: absolute;
+  opacity: 1;
+  background: rgba(31, 31, 30, 0.747);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-only-text {
+  height: fit-content;
+}
