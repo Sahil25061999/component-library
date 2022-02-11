@@ -20,7 +20,7 @@
   position: absolute;
   right: -10%;
   top: -30%;
-  color: white;
+  color: var(--primary-text-color);
   font-size: 12px;
   font-weight: bold;
   text-align: center;
