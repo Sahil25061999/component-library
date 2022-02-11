@@ -91,3 +91,7 @@
 .card-text-overlay .card-head .badge-text {
   color: var(--secondary-text-color);
 }
+
+.card-vertical-overlay {
+  width: 40rem;
+}

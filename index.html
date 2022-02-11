@@ -14,21 +14,256 @@
       <header class="navbar shadow">
         <h2>MinUI</h2>
         <nav>
-          <ul class="navbar_link">
+          <ul class="navbar-link">
             <li><a class="btn btn-link-primary">Documentation</a></li>
             <li>Get Started</li>
           </ul>
         </nav>
       </header>
       <nav class="sidebar">
-        <a class="btn btn-link" href="component/avatar/avatar.html">Avatar</a>
-        <a class="btn btn-link" href="component/alert/alert.html">Alert</a>
-        <a class="btn btn-link" href="component/badge/badge.html">Badge</a>
+        <a class="btn btn-link margin-t-1r" href="#avatar-section">Avatar</a>
+        <a class="btn btn-link" href="#alert-section">Alert</a>
+        <a class="btn btn-link" href="#badge-section">Badge</a>
         <a class="btn btn-link" href="component/button/button.html">Button</a>
         <a class="btn btn-link" href="component/card/card.html">Card</a>
       </nav>
-      <main class="component_info">
-        <h1>My component Library</h1>
+      <main class="component-description margin-t-1r">
+        <!-- Avatar -->
+        <div id="avatar-section" class="avatar-section">
+          <h1 class="component-title">Avatar</h1>
+          <p class="description margin-t-1r">
+            Avatar represent the picture of user, it can contain illustration,
+            the initials or the actual image of the user. Its size varies
+            depending on the use case.
+          </p>
+          <section class="container margin-t-b-2r">
+            <!---Avatar xs--->
+            <div class="avatar avatar-xs">
+              <img
+                class="avatar-img"
+                src="assets/images/avatar/female2.svg"
+                alt="avatar"
+              />
+            </div>
+
+            <!---Avatar sm--->
+            <div class="avatar avatar-sm">
+              <img
+                class="avatar-img"
+                src="assets/images/avatar/female1.svg"
+                alt="avatar"
+              />
+            </div>
+
+            <!---Avatar md--->
+            <div class="avatar avatar-md">
+              <img
+                class="avatar-img"
+                src="assets/images/avatar/female3.svg"
+                alt="avatar"
+              />
+            </div>
+
+            <!---Avatar lg--->
+            <div class="avatar avatar-lg">
+              <img
+                class="avatar-img"
+                src="assets/images/avatar/male1.svg"
+                alt="avatar"
+              />
+            </div>
+            <div class="avatar avatar-xlg">
+              <img
+                class="avatar-img"
+                src="assets/images/avatar/male2.svg"
+                alt="avatar"
+              />
+            </div>
+          </section>
+          <iframe
+            class="code-preview"
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21---Avatar%2520xs---%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522assets%252Fimages%252Favatar%252Ffemale2.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21---Avatar%2520sm---%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522assets%252Fimages%252Favatar%252Ffemale1.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21---Avatar%2520md---%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522assets%252Fimages%252Favatar%252Ffemale3.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21---Avatar%2520lg---%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522assets%252Fimages%252Favatar%252Fmale1.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xlg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522assets%252Fimages%252Favatar%252Fmale2.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+            style="
+              width: 680px;
+              height: 858px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+
+          <!--Text avatar-->
+          <h1 class="component-title margin-t-2r">Text Avatar</h1>
+          <p class="description margin-t-1r">
+            An avatar which contains the initials
+          </p>
+          <section class="container margin-t-b-2r">
+            <div class="avatar avatar-xs avatar-initials">UN</div>
+            <div class="avatar avatar-sm avatar-initials">UN</div>
+            <div class="avatar avatar-md avatar-initials">UN</div>
+            <div class="avatar avatar-lg avatar-initials">UN</div>
+            <div class="avatar avatar-xlg avatar-initials">UN</div>
+          </section>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=5px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xlg%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E"
+            style="
+              width: 680px;
+              height: 163px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          ></iframe>
+        </div>
+
+        <!-- Alert -->
+        <div id="alert-section" class="alert-section">
+          <h1 class="component-title margin-t-2r">Alert</h1>
+          <p class="description margin-t-1r">
+            Alert dialog is used to alert the user with some different
+            information. Alert can be of different types viz. success, warning,
+            failure etc.
+          </p>
+          <section class="container vertical-container margin-t-b-2r">
+            <div class="alert alert-default">
+              This is the default alert
+              <a href="#" class="alert-link">with link</a>.
+            </div>
+            <div class="alert alert-success">This is the success alert</div>
+            <div class="alert alert-failure">
+              This is the unsuccessful alert
+            </div>
+            <div class="alert alert-warning">This is the warning alert</div>
+          </section>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xlg%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E"
+            style="
+              width: 680px;
+              height: 151px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+
+          <!-- Outlined Alert -->
+          <h1 class="component-title margin-t-2r">Outlined Alert</h1>
+          <p class="description margin-t-1r">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+            modi! Nisi deserunt reprehenderit perferendis explicabo. Itaque,
+            veritatis tenetur. Id aut aliquid ipsum ullam, non saepe similique
+            expedita nesciunt consequuntur. Laborum!
+          </p>
+          <section class="container vertical-container margin-t-b-2r">
+            <div class="alert alert-default-outline">
+              This is the default alert
+            </div>
+            <div class="alert alert-success-outline">
+              This is the success alert
+            </div>
+            <div class="alert alert-failure-outline">
+              This is the unsuccessful alert
+            </div>
+            <div class="alert alert-warning-outline">
+              This is the warning alert
+            </div>
+          </section>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-default-outline%2522%253EThis%2520is%2520the%2520default%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success-outline%2522%253EThis%2520is%2520the%2520success%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-failure-outline%2522%253EThis%2520is%2520the%2520unsuccessful%2520alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning-outline%2522%253EThis%2520is%2520the%2520warning%2520alert%253C%252Fdiv%253E"
+            style="
+              width: 680px;
+              height: 133px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+
+        <!-- Badge -->
+        <div id="badge-section" class="badge-section">
+          <h1 class="component-title margin-t-2r">Badge</h1>
+          <p class="description margin-t-1r">
+            Badge are used to indicated a state of component. It can be used to
+            communicate whether a user is active or inactive, or an item is
+            trending, best seller etc.
+          </p>
+          <section class="container margin-t-b-2r">
+            <div class="badge-container">
+              <div class="badge"></div>
+              Badges on text
+            </div>
+            <div class="badge-container">
+              <div class="badge">3</div>
+              Badges on text with count
+            </div>
+            <div class="badge-container">
+              text badge<span class="badge-text">Hot</span>
+            </div>
+          </section>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520Badges%2520on%2520text%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2522%253E3%253C%252Fdiv%253E%250A%2520%2520%2520%2520Badges%2520on%2520text%2520with%2520count%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520text%2520badge%253Cspan%2520class%253D%2522badge-text%2522%253EHot%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+            style="
+              width: 680px;
+              height: 263px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+          <!-- Badge on icons -->
+          <h1 class="component-title margin-t-2r">Badge on icons</h1>
+          <p class="description margin-t-1r"></p>
+          <section class="container margin-t-b-2r">
+            <div class="badge-container">
+              <div class="badge"></div>
+              <span class="fa-brands fa-amazon badge-icon"></span>
+            </div>
+            <div class="badge-container">
+              <div class="badge">2</div>
+              <span class="fas fa-shopping-cart badge-icon"></span>
+            </div>
+            <div class="badge-container">
+              <div class="badge badge-accent">3</div>
+              <span class="fa-solid fa-message badge-icon"></span>
+            </div>
+          </section>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fa-brands%2520fa-amazon%2520badge-icon%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2522%253E2%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fas%2520fa-shopping-cart%2520badge-icon%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2520badge-accent%2522%253E3%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fa-solid%2520fa-message%2520badge-icon%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+            style="
+              width: 680px;
+              height: 282px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+
+          <!--Text Badges-->
+          <h1 class="component-title margin-t-2r">Text Badges</h1>
+          <p class="description margin-t-1r">
+            This are badges with text inside it. It can be using in product
+            cards to display the trending products or the best selling products.
+          </p>
+          <section class="container margin-t-b-2r">
+            <div class="badge-container">
+              text badge<span class="badge-text ">Hot</span>
+              <div class="badge-container">
+                iphone<span class="badge-text badge-accent ">Best selling</span>
+            </div>
+          </section>
+        </div>
       </main>
     </div>
   </body>
