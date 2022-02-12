@@ -3,12 +3,11 @@
 .btn {
   border: 3px solid transparent;
   font-weight: 600;
-  padding: 0.5rem 1rem;
+  padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
   background: transparent;
   color: var(--secondary-text-color);
-  margin: 2px;
   white-space: nowrap;
 }
 
@@ -104,6 +103,10 @@
   width: 2.5rem;
 }
 
+.btn-square {
+  border-radius: 25%;
+}
+
 /** button hover style **/
 
 .btn:hover {
@@ -133,4 +136,8 @@
 .btn-link-accented:hover,
 .btn-link:hover {
   text-decoration: underline;
+}
+
+.btn-only-icon {
+  border: none;
 }

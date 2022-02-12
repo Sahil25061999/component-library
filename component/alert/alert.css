@@ -7,6 +7,9 @@
   padding: 1rem;
   color: var(--secondary-text-color);
   margin: 0.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .alert-default {

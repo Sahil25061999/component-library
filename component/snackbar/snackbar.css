@@ -1,0 +1,59 @@
+@import '/index.css';
+
+.snackbar {
+  min-width: 20rem;
+  width: 30%;
+  padding: 12px 10px;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 2%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px;
+}
+
+.snackbar-content {
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.snackbar-right {
+  right: 0;
+}
+
+.snackbar-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.snackbar-primary {
+  background: var(--primary-color);
+  box-shadow: 4px 8px 32px var(--primary-color-low-opacity);
+}
+
+.snackbar-primary .btn {
+  background: var(--primary-color);
+}
+
+.snackbar-secondary {
+  background: var(--secondary-color);
+  color: var(--primary-text-color);
+  box-shadow: 4px 8px 32px var(--secondary-color-low-opacity);
+}
+
+.snackbar-secondary .btn {
+  background: var(--secondary-color);
+}
+
+.snackbar-accent {
+  background: var(--accent-color);
+  box-shadow: 4px 8px 32px var(--accent-color-low-opacity);
+}
+
+.snackbar-accent .btn {
+  background: var(--accent-color);
+}

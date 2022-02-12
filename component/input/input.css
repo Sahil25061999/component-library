@@ -6,8 +6,8 @@
   border: 3px solid rgba(114, 114, 114, 0.404);
   margin: 0.5rem;
   outline: none;
-  max-width: 18rem;
-  width: 100%;
+  min-width: 18rem;
+  width: 70%;
 }
 
 .textbox:focus {
