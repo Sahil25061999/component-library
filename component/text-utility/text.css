@@ -1,0 +1,94 @@
+@import '/index.css';
+
+body {
+  width: 100vw;
+}
+
+.h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.h5 {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.h6 {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.xsmall-text {
+  font-size: 0.75rem;
+}
+
+.small-text {
+  font-size: 0.87rem;
+}
+
+.medium-text {
+  font-size: 1.5rem;
+}
+
+.large-text {
+  font-size: 2rem;
+}
+
+.xlarge-text {
+  font-size: 2.5rem;
+}
+
+.strike-text {
+  text-decoration: line-through;
+}
+
+.underline-text {
+  text-decoration: underline;
+}
+
+/** text orientation **/
+
+.text-center {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.text-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/** text color **/
+
+.primary-text-color {
+  color: var(--primary-color);
+}
+
+.secondary-text-color {
+  color: var(--secondary-color);
+}
+
+.accent-text-color {
+  color: var(--accent-color);
+}
+
+.muted-text-color {
+  color: var(--muted-text-color);
+}

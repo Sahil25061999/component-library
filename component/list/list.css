@@ -1,0 +1,42 @@
+@import '/index.css';
+
+.ul_temp_container {
+  padding: 2rem;
+}
+
+.list-stacked .list-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid var(--muted-color);
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.list-horizontal {
+  display: flex;
+}
+
+.list-horizontal .list-item {
+  margin: 0 0.5rem;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.list-style-circle {
+  list-style: circle;
+}
+
+.list-style-square {
+  list-style: square;
+}
+
+.list-style-decimal {
+  list-style: decimal;
+}
+
+.list-style-zero-decimal {
+  list-style: decimal-leading-zero;
+}

@@ -7,6 +7,11 @@
 @import 'component/card/card.css';
 @import 'component/image/image.css';
 @import '/component/input/input.css';
+@import '/component/navigation/navigation.css';
+@import '/component/snackbar/snackbar.css';
+@import '/component/grid/grid.css';
+@import '/component/list/list.css';
+@import '/component/text-utility/text.css';
 
 :root {
   --primary-color: hsl(234, 74%, 74%);
@@ -22,6 +27,8 @@
   --dark-mode: rgb(56, 56, 56);
   --primary-text-color: white;
   --secondary-text-color: black;
+  --muted-text-color: hsl(0, 0%, 48%);
+  --muted-color: hsla(0, 0%, 48%, 0.212);
   --accent-color: hsl(50, 93%, 72%);
   --accent-color-low-opacity: hsla(50, 93%, 72%, 0.5);
   --accent-hover-color: hsl(50, 100%, 65%);
@@ -47,11 +54,6 @@ body {
   /* padding: 0.5rem; */
 }
 
-ol,
-ul {
-  list-style: none;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -69,14 +71,23 @@ body {
   display: flex;
 }
 
+.margin-5 {
+  margin: 5px;
+}
+
+.margin-10 {
+  margin: 10px;
+}
+.margin-r-10 {
+  margin-right: 10px;
+}
+
 .margin-r-5 {
   margin-right: 5px;
 }
-
 .margin-l-5 {
   margin-left: 5px;
 }
-
 .margin-t-5 {
   margin-top: 5px;
 }
@@ -84,20 +95,24 @@ body {
   margin-bottom: 5px;
 }
 
-.small-text {
-  font-size: 12px;
+.margin-t-b-5 {
+  margin: 5px 0;
 }
 
-.primary-text-color {
-  color: var(--primary-color);
+.margin-l-r-5 {
+  margin: 0 5px;
 }
 
-.secondary-text-color {
-  color: var(--secondary-color);
+.primary-color {
+  background-color: var(--primary-color);
 }
 
-.accent-text-color {
-  color: var(--accent-color);
+.secondary-color {
+  background-color: var(--secondary-color);
+}
+
+.accent-color {
+  background-color: var(--accent-color);
 }
 
 .shadow {
