@@ -1,7 +1,7 @@
 @import '/index.css';
 
 .alert {
-  width: max-content;
+  min-width: 25rem;
   border-radius: 0.5rem;
   width: 70%;
   padding: 1rem;

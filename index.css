@@ -6,6 +6,7 @@
 @import 'component/button/button.css';
 @import 'component/card/card.css';
 @import 'component/image/image.css';
+@import '/component/input/input.css';
 
 :root {
   --primary-color: hsl(234, 74%, 74%);
@@ -82,6 +83,18 @@ body {
 
 .small-text {
   font-size: 12px;
+}
+
+.primary-text-color {
+  color: var(--primary-color);
+}
+
+.secondary-text-color {
+  color: var(--secondary-color);
+}
+
+.accent-text-color {
+  color: var(--accent-color);
 }
 
 .shadow {

@@ -24,13 +24,14 @@
         <a class="btn btn-link margin-t-1r" href="#avatar-section">Avatar</a>
         <a class="btn btn-link" href="#alert-section">Alert</a>
         <a class="btn btn-link" href="#badge-section">Badge</a>
-        <a class="btn btn-link" href="component/button/button.html">Button</a>
-        <a class="btn btn-link" href="component/card/card.html">Card</a>
-        <a class="btn btn-link" href="component/image/image.html">Image</a>
+        <a class="btn btn-link" href="#button-section">Button</a>
+        <a class="btn btn-link" href="#card-section">Card</a>
+        <a class="btn btn-link" href="#image-section">Image</a>
+        <a class="btn btn-link" href="component/input/input.html">Input</a>
       </nav>
-      <main class="component-description margin-t-1r">
+      <main class="components">
         <!-- Avatar -->
-        <div id="avatar-section" class="avatar-section">
+        <div id="avatar-section" class="component-section avatar-section">
           <h1 class="component-title">Avatar</h1>
           <p class="description margin-t-1r">
             Avatar represent the picture of user, it can contain illustration,
@@ -39,7 +40,7 @@
           </p>
           <section class="container margin-t-b-2r">
             <!---Avatar xs--->
-            <div class="avatar avatar-xs">
+            <div class="avatar avatar-xs margin-1r">
               <img
                 class="avatar-img"
                 src="assets/images/avatar/female2.svg"
@@ -48,7 +49,7 @@
             </div>
 
             <!---Avatar sm--->
-            <div class="avatar avatar-sm">
+            <div class="avatar avatar-sm margin-1r">
               <img
                 class="avatar-img"
                 src="assets/images/avatar/female1.svg"
@@ -57,7 +58,7 @@
             </div>
 
             <!---Avatar md--->
-            <div class="avatar avatar-md">
+            <div class="avatar avatar-md margin-1r">
               <img
                 class="avatar-img"
                 src="assets/images/avatar/female3.svg"
@@ -66,14 +67,14 @@
             </div>
 
             <!---Avatar lg--->
-            <div class="avatar avatar-lg">
+            <div class="avatar avatar-lg margin-1r">
               <img
                 class="avatar-img"
                 src="assets/images/avatar/male1.svg"
                 alt="avatar"
               />
             </div>
-            <div class="avatar avatar-xlg">
+            <div class="avatar avatar-xlg margin-1r">
               <img
                 class="avatar-img"
                 src="assets/images/avatar/male2.svg"
@@ -96,16 +97,18 @@
           </iframe>
 
           <!--Text avatar-->
-          <h1 class="component-title margin-t-2r">Text Avatar</h1>
+          <h2 class="component-title margin-t-2r">Text Avatar</h2>
           <p class="description margin-t-1r">
             An avatar which contains the initials
           </p>
           <section class="container margin-t-b-2r">
-            <div class="avatar avatar-xs avatar-initials">UN</div>
-            <div class="avatar avatar-sm avatar-initials">UN</div>
-            <div class="avatar avatar-md avatar-initials">UN</div>
-            <div class="avatar avatar-lg avatar-initials">UN</div>
-            <div class="avatar avatar-xlg avatar-initials">UN</div>
+            <div class="avatar avatar-xs avatar-initials margin-1r">UN</div>
+            <div class="avatar avatar-sm avatar-initials margin-1r">UN</div>
+            <div class="avatar avatar-md avatar-initials margin-1r">UN</div>
+            <div class="avatar avatar-lg avatar-initials margin-1r">UN</div>
+            <div class="avatar avatar-xlg avatar-initials margin-1r">
+              UN
+            </div>
           </section>
           <iframe
             src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=5px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xlg%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E"
@@ -121,8 +124,11 @@
         </div>
 
         <!-- Alert -->
-        <div id="alert-section" class="alert-section">
-          <h1 class="component-title margin-t-2r">Alert</h1>
+        <div
+          id="alert-section"
+          class="component-section alert-section margin-t-2r"
+        >
+          <h1 class="component-title">Alert</h1>
           <p class="description margin-t-1r">
             Alert dialog is used to alert the user with some different
             information. Alert can be of different types viz. success, warning,
@@ -153,7 +159,7 @@
           </iframe>
 
           <!-- Outlined Alert -->
-          <h1 class="component-title margin-t-2r">Outlined Alert</h1>
+          <h2 class="component-title margin-t-2r">Outlined Alert</h2>
           <p class="description margin-t-1r">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
             modi! Nisi deserunt reprehenderit perferendis explicabo. Itaque,
@@ -189,23 +195,26 @@
         </div>
 
         <!-- Badge -->
-        <div id="badge-section" class="badge-section">
-          <h1 class="component-title margin-t-2r">Badge</h1>
+        <div
+          id="badge-section"
+          class="component-section badge-section margin-t-2r"
+        >
+          <h1 class="component-title">Badge</h1>
           <p class="description margin-t-1r">
             Badge are used to indicated a state of component. It can be used to
             communicate whether a user is active or inactive, or an item is
             trending, best seller etc.
           </p>
           <section class="container margin-t-b-2r">
-            <div class="badge-container">
+            <div class="badge-container margin-1r">
               <div class="badge"></div>
               Badges on text
             </div>
-            <div class="badge-container">
+            <div class="badge-container margin-1r">
               <div class="badge">3</div>
               Badges on text with count
             </div>
-            <div class="badge-container">
+            <div class="badge-container margin-1r">
               text badge<span class="badge-text">Hot</span>
             </div>
           </section>
@@ -222,18 +231,18 @@
           >
           </iframe>
           <!-- Badge on icons -->
-          <h1 class="component-title margin-t-2r">Badge on icons</h1>
+          <h2 class="component-title margin-t-2r">Badge on icons</h2>
           <p class="description margin-t-1r"></p>
           <section class="container margin-t-b-2r">
-            <div class="badge-container">
+            <div class="badge-container margin-1r">
               <div class="badge"></div>
               <span class="fa-brands fa-amazon badge-icon"></span>
             </div>
-            <div class="badge-container">
+            <div class="badge-container margin-1r">
               <div class="badge">2</div>
               <span class="fas fa-shopping-cart badge-icon"></span>
             </div>
-            <div class="badge-container">
+            <div class="badge-container margin-1r">
               <div class="badge badge-accent">3</div>
               <span class="fa-solid fa-message badge-icon"></span>
             </div>
@@ -252,18 +261,332 @@
           </iframe>
 
           <!--Text Badges-->
-          <h1 class="component-title margin-t-2r">Text Badges</h1>
+          <h2 class="component-title margin-t-2r">Text Badges</h2>
           <p class="description margin-t-1r">
             This are badges with text inside it. It can be using in product
             cards to display the trending products or the best selling products.
           </p>
           <section class="container margin-t-b-2r">
-            <div class="badge-container">
-              text badge<span class="badge-text ">Hot</span>
-              <div class="badge-container">
-                iphone<span class="badge-text badge-accent ">Best selling</span>
+            <div class="badge-container margin-1r">
+              iphone<span class="badge-text badge-sm">Hot</span>
+            </div>
+            <div class="badge-container margin-1r">
+              iphone<span class="badge-text badge-accent badge-md"
+                >Best selling</span
+              >
+            </div>
+            <div class="badge-container margin-1r">
+              iphone<span class="badge-text badge-secondary badge-lg"
+                >Best selling</span
+              >
             </div>
           </section>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509iphone%250A%2520%2520%2509%253Cspan%2520class%253D%2522badge-text%2520badge-sm%2522%253EHot%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509iphone%250A%2520%2520%2509%253Cspan%2520class%253D%2522badge-text%2520badge-accent%2520badge-md%2522%253EBest%2520selling%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509iphone%250A%2520%2520%2509%253Cspan%2520class%253D%2522badge-text%2520badge-secondary%2520badge-lg%2522%253EBest%2520selling%253C%252Fspan%253E%253C%252Fdiv%253E"
+            style="
+              width: 680px;
+              height: 298px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+        <!-- Button -->
+        <div
+          id="button-section"
+          class="button-section component-section margin-t-2r"
+        >
+          <h1 class="component-title">Button</h1>
+          <p class="description margin-t-1r">
+            Buttons are one of the main component of any application. Different
+            style of button signifies the level of importance.
+          </p>
+          <section class="container margin-t-b-2r">
+            <button class="btn btn-primary margin-1r">Primary</button>
+            <button class="btn btn-secondary margin-1r">Secondary</button>
+            <button class="btn btn-accented margin-1r">
+              Call to action
+            </button>
+          </section>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-accented%2522%253ESecondary%253C%252Fbutton%253E"
+            style="
+              width: 680px;
+              height: 130px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+          <!-- Outlined Buttons -->
+          <h2 class="component-title margin-t-2r">Outlined Button</h2>
+          <p class="description margin-t-1r">
+            Buttons are one of the main component of any application. Different
+            style of button signifies the level of importance.
+          </p>
+          <section class="container margin-t-b-2r">
+            <button class="btn btn-outline-primary margin-1r">
+              Outlined
+            </button>
+            <button class="btn btn-outline-secondary margin-1r">
+              Outlined
+            </button>
+            <button class="btn btn-outline-accented margin-1r">
+              Outlined
+            </button>
+          </section>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2522%253EOutlined%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-secondary%2522%253EOutlined%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-accented%2522%253EOutlined%253C%252Fbutton%253E"
+            style="
+              width: 680px;
+              height: 130px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+
+          <!-- Button with icons -->
+          <h2 class="component-title margin-t-2r">Button with icons</h2>
+          <p class="description margin-t-1r">
+            Buttons are one of the main component of any application. Different
+            style of button signifies the level of importance.
+          </p>
+          <section class="container margin-t-b-2r">
+            <button class="btn btn-secondary margin-1r">
+              <span class="fas fa-heart btn-icon"></span>Icon
+            </button>
+            <button class="btn btn-primary margin-1r">
+              <span class="fas fa-heart btn-icon"></span>Icon
+            </button>
+            <button class="btn btn-accented margin-1r">
+              <span class="fas fa-heart btn-icon"></span>Icon
+            </button>
+          </section>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253E%250A%2509%253Cspan%2520class%253D%2522fas%2520fa-heart%2520btn-icon%2522%253E%253C%252Fspan%253EIcon%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2509%253Cspan%2520class%253D%2522fas%2520fa-heart%2520btn-icon%2522%253E%253C%252Fspan%253EIcon%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-accented%2522%253E%250A%2509%253Cspan%2520class%253D%2522fas%2520fa-heart%2520btn-icon%2522%253E%253C%252Fspan%253EIcon%250A%253C%252Fbutton%253E"
+            style="
+              width: 680px;
+              height: 242px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+
+          <!-- link button -->
+          <h2 class="component-title margin-t-2r">Link button</h2>
+          <p class="description margin-t-1r">
+            Buttons are one of the main component of any application. Different
+            style of button signifies the level of importance.
+          </p>
+          <section class="container margin-t-b-2r">
+            <a class="btn btn-link link-active margin-1r href="#">link</a>
+            <a class="btn btn-link-primary margin-1r" href="#">link</a>
+            <a class="btn btn-link-secondary margin-1r" href="#">link2</a>
+            <a class="btn btn-link-accented margin-1r" href="#">link2</a>
+          </section>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520class%253D%2522btn%2520btn-link%2520link-active%2522%2520href%253D%2522%2523%2522%253Elink%253C%252Fa%253E%250A%253Ca%2520class%253D%2522btn%2520btn-link-primary%2522%2520href%253D%2522%2523%2522%253Elink%253C%252Fa%253E%250A%253Ca%2520class%253D%2522btn%2520btn-link-secondary%2522%2520href%253D%2522%2523%2522%253Elink2%253C%252Fa%253E%250A%253Ca%2520class%253D%2522btn%2520btn-link-accented%2522%2520href%253D%2522%2523%2522%253Elink2%253C%252Fa%253E"
+            style="
+              width: 680px;
+              height: 149px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+
+          <!-- Floating button -->
+          <h2 class="component-title margin-t-2r">Floating button</h2>
+          <p class="description margin-t-1r">
+            Buttons are one of the main component of any application. Different
+            style of button signifies the level of importance.
+          </p>
+          <section class="container margin-t-b-2r">
+            <button class="btn btn-float btn-accented margin-1r">
+              <span class="fa-solid fa-angle-up"></span>
+            </button>
+            <button class="btn btn-float btn-primary margin-1r">
+              <span class="fa-solid fa-angle-up"></span>
+            </button>
+            <button class="btn btn-float btn-outline-secondary margin-1r">
+              <span class="fa-solid fa-angle-up"></span>
+            </button>
+          </section>
+          <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-float%2520btn-accented%2522%253E%250A%2509%253Cspan%2520class%253D%2522fa-solid%2520fa-angle-up%2522%253E%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-float%2520btn-primary%2522%253E%250A%2509%253Cspan%2520class%253D%2522fa-solid%2520fa-angle-up%2522%253E%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-secondary%2520btn-float%2522%253E%250A%2509%253Cspan%2520class%253D%2522fa-solid%2520fa-angle-up%2522%253E%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
+  style="width: 680px; height: 242px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+          </iframe>
+
+<!-- Icon button -->
+<h2 class="component-title margin-t-2r">Icon button</h2>
+<p class="description margin-t-1r">
+  Buttons are one of the main component of any application. Different
+  style of button signifies the level of importance.
+</p>
+<section class="container margin-t-b-2r">
+  <button class="btn btn-only-icon margin-1r">
+    <span class="fas fa-heart"></span>
+  </button>
+  <button class="btn btn-only-icon btn-link-secondary margin-1r">
+    <span class="fas fa-heart"></span>
+  </button>
+  <button class="btn btn-only-icon btn-link-accented margin-1r">
+    <span class="fas fa-heart"></span>
+  </button>
+</section>
+<iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-only-icon%2522%253E%250A%2509%253Cspan%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-only-icon%2520btn-link-secondary%2522%253E%250A%2509%253Cspan%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-only-icon%2520btn-link-accented%2522%253E%250A%2509%253Cspan%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
+  style="width: 680px; height: 242px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+        </div>
+
+        <!-- Card -->
+        <div id="card-section" class="component-section card-section margin-t-2r">
+          <h1 class="component-title">Card</h1>
+          <p class="description margin-t-1r">
+            Cards are the most used items in todays ui design. To use the card component you can use the <span class="secondary-text-color">.card</span> class. This will give you a vertical card. To use the close icon add button element and give it the class <span class="secondary-text-color">".btn .btn-float .btn-white"</span>
+          </p>
+          <section class="container margin-t-b-2r">
+            <div class="card margin-1r">
+              <div class="image-container">
+                <img
+                  class="card-image"
+                  src="/assets/images/responsive image.jpg"
+                  alt="product-image" loading="lazy"
+                />
+              </div>
+              <div class="card-head">
+                <h3 class="card-heading d-flex">
+                  Dog Black <span class="badge-text badge-sm badge-accent">Hot</span>
+                </h3>
+                <p class="card-subheading">by Jatin Sapru</p>
+              </div>
+              <div class="card-content">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
+                  provident a voluptatum nesciunt quaerat eveniet fuga officiis
+                  reprehenderit natus voluptate temporibus debitis, maiores ratione
+                  ipsam cupiditate sunt ea quae id quas deleniti, animi unde.
+                  Dignissimos est aliquid nisi et eum atque, reiciendis ut? Rem ipsum
+                  in ducimus est inventore totam.
+                </p>
+      
+                <h3 class="card-pricing">
+                  $50<span class="card-og-price small-text">$100</span>
+                  <span class="badge-text badge-sm badge-secondary">50% off</span>
+                </h3>
+              </div>
+              <div class="card-foot d-flex">
+                <button class="btn btn-primary margin-r-5">Buy</button>
+                <button class="btn btn-outline-secondary">add to cart</button>
+                <button class="btn btn-only-icon">
+                  <span class="fas fa-heart"></span>
+                </button>
+              </div>
+            </div>
+            <div class="card margin-1r">
+              <button class="btn btn-float btn-white">
+                <span class="fa-solid fa-xmark"></span>
+              </button>
+              <div class="image-container">
+                <img
+                  class="card-image"
+                  src="/assets/images/responsive image.jpg"
+                  alt="product-image"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-head">
+                <h3 class="card-heading d-flex">
+                  Dog Black <span class="badge-text badge-sm badge-accent">Hot</span>
+                </h3>
+                <p class="card-subheading">by Jatin Sapru</p>
+              </div>
+              <div class="card-content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      
+                <h3 class="card-pricing">
+                  $50<span class="card-og-price small-text">$100</span>
+                  <span class="badge-text badge-sm badge-secondary">50% off</span>
+                </h3>
+              </div>
+              <div class="card-foot d-flex">
+                <button class="btn btn-primary margin-r-5">Buy</button>
+                <button class="btn btn-outline-secondary">add to cart</button>
+                <button class="btn btn-only-icon">
+                  <span class="fas fa-heart"></span>
+                </button>
+              </div>
+            </div>
+          </section>
+          <iframe class="code-preview"
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2509%253Cbutton%2520class%253D%2522btn%2520btn-float%2520btn-white%2522%253E%250A%2509%2509%253Cspan%2520class%253D%2522fa-solid%2520fa-xmark%2522%253E%253C%252Fspan%253E%250A%2509%253C%252Fbutton%253E%250A%2509%253Cdiv%2520class%253D%2522image-container%2522%253E%250A%2509%2509%253Cimg%2520class%253D%2522card-image%2522%2520src%253D%2522%252Fassets%252Fimages%252Fresponsive%2520image.jpg%2522%2520%2509%2509%2509%2509alt%253D%2522product-image%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-head%2522%253E%250A%2520%2520%2520%2509%2509%253Ch3%2520class%253D%2522card-heading%2520d-flex%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509Dog%2520Black%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cspan%2520class%253D%2522badge-text%2520badge-sm%2520badge-accent%2522%253EHot%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subheading%2522%253Eby%2520Jatin%2520Sapru%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2509%2509%253Cp%253ELorem%252C%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%2509%2509%2520%2520%253Ch3%2520class%253D%2522card-pricing%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%252450%250A%2520%2520%2520%2520%2509%2509%253Cspan%2520class%253D%2522card-og-price%2520small-text%2522%253E%2524100%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-text%2520badge-sm%2520badge-secondary%2522%253E50%2525%2520off%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh3%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-foot%2520d-flex%2522%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520margin-r-5%2522%253EBuy%253C%252Fbutton%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-outline-secondary%2522%253Eadd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-only-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cspan%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+  style="width: 680px; height: 688px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+      <h2 class="component-title margin-t-2r">Horizontal Card</h2>
+      <p class="description margin-t-1r">To use the horizontal card add <span class="secondary-text-color">.card-horizontal</span></p>
+      <section class="container margin-t-b-2r">
+        <div class="card card-horizontal">
+          <button class="btn btn-float">
+            <span class="fa-solid fa-xmark"></span>
+          </button>
+          <div class="image-container">
+            <img
+              class="card-image"
+              src="/assets/images/responsive image.jpg"
+              alt="product-image"
+              loading="lazy"
+            />
+          </div>
+          <div class="card-head">
+            <h3 class="card-heading d-flex">
+              Dog Black <span class="badge-text badge-sm badge-accent">Hot</span>
+            </h3>
+            <p class="card-subheading">by Jatin Sapru</p>
+          </div>
+          <div class="card-content">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident,
+              eos perspiciatis! Deleniti minima culpa fuga, nisi veritatis nobis
+              mollitia tempora!
+            </p>
+  
+            <h3 class="card-pricing">
+              $50<span class="card-og-price small-text">$100</span>
+              <span class="badge-text badge-sm badge-secondary">50% off</span>
+            </h3>
+          </div>
+  
+          <div class="card-foot d-flex">
+            <button class="btn btn-primary margin-r-5">Buy</button>
+            <button class="btn btn-outline-secondary">add to cart</button>
+            <button class="btn btn-only-icon">
+              <span class="fas fa-heart"></span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <iframe class="code-preview"
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-horizontal%2522%253E%250A%2509%253Cbutton%2520class%253D%2522btn%2520btn-float%2520btn-white%2522%253E%250A%2509%2509%253Cspan%2520class%253D%2522fa-solid%2520fa-xmark%2522%253E%253C%252Fspan%253E%250A%2509%253C%252Fbutton%253E%250A%2509%253Cdiv%2520class%253D%2522image-container%2522%253E%250A%2509%2509%253Cimg%2520class%253D%2522card-image%2522%2520src%253D%2522%252Fassets%252Fimages%252Fresponsive%2520image.jpg%2522%2520%2509%2509%2509%2509alt%253D%2522product-image%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-head%2522%253E%250A%2520%2520%2520%2509%2509%253Ch3%2520class%253D%2522card-heading%2520d-flex%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509Dog%2520Black%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cspan%2520class%253D%2522badge-text%2520badge-sm%2520badge-accent%2522%253EHot%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subheading%2522%253Eby%2520Jatin%2520Sapru%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2509%2509%253Cp%253ELorem%252C%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%2509%2509%2520%2520%253Ch3%2520class%253D%2522card-pricing%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%252450%250A%2520%2520%2520%2520%2509%2509%253Cspan%2520class%253D%2522card-og-price%2520small-text%2522%253E%2524100%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-text%2520badge-sm%2520badge-secondary%2522%253E50%2525%2520off%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh3%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-foot%2520d-flex%2522%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520margin-r-5%2522%253EBuy%253C%252Fbutton%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-outline-secondary%2522%253Eadd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-only-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cspan%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+  style="width: 680px; height: 688px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
         </div>
       </main>
     </div>
