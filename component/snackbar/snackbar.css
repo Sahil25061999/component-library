@@ -32,7 +32,7 @@
 
 .snackbar-primary {
   background: var(--primary-color);
-  box-shadow: 4px 8px 40px var(--primary-color);
+  box-shadow: 4px 8px 32px var(--primary-color-low-opacity);
 }
 
 .snackbar-primary .btn {
@@ -42,7 +42,7 @@
 .snackbar-secondary {
   background: var(--secondary-color);
   color: var(--primary-text-color);
-  box-shadow: 4px 8px 40px var(--secondary-color);
+  box-shadow: 4px 8px 32px var(--secondary-color-low-opacity);
 }
 
 .snackbar-secondary .btn {
@@ -51,7 +51,7 @@
 
 .snackbar-accent {
   background: var(--accent-color);
-  box-shadow: 4px 8px 40px var(--accent-color);
+  box-shadow: 4px 8px 32px var(--accent-color-low-opacity);
 }
 
 .snackbar-accent .btn {

@@ -10,7 +10,9 @@
 
 :root {
   --primary-color: hsl(234, 74%, 74%);
+  --primary-color-low-opacity: hsl(234, 74%, 74%, 0.5);
   --secondary-color: hsl(262, 45%, 35%);
+  --secondary-color-low-opacity: hsl(262, 45%, 35%, 0.5);
   --warning-color: hsl(50, 94%, 69%);
   --success-color: hsl(120, 96%, 74%);
   --failure-color: hsl(0, 100%, 76%);
@@ -21,6 +23,7 @@
   --primary-text-color: white;
   --secondary-text-color: black;
   --accent-color: hsl(50, 93%, 72%);
+  --accent-color-low-opacity: hsla(50, 93%, 72%, 0.5);
   --accent-hover-color: hsl(50, 100%, 65%);
 }
 

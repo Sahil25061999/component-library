@@ -8,7 +8,6 @@
   align-items: center;
   justify-items: center;
   backdrop-filter: blur(8px);
-
   z-index: 1;
   height: 4rem;
   margin-bottom: 4px;
@@ -18,8 +17,13 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-.navbar-list {
+.navbar-list,
+.search-container {
   display: flex;
+}
+
+.search-container {
+  align-items: center;
 }
 
 .navbar-item {
