@@ -30,5 +30,5 @@
 }
 
 .grid-item {
-  background-color: blue;
+  background-color: var(--secondary-color);
 }
