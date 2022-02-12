@@ -85,6 +85,18 @@ body {
   font-size: 12px;
 }
 
+.primary-text-color {
+  color: var(--primary-color);
+}
+
+.secondary-text-color {
+  color: var(--secondary-color);
+}
+
+.accent-text-color {
+  color: var(--accent-color);
+}
+
 .shadow {
   box-shadow: 4px 8px 32px rgba(0, 0, 0, 0.2);
 }

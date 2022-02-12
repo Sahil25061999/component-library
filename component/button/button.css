@@ -9,6 +9,7 @@
   background: transparent;
   color: var(--secondary-text-color);
   margin: 2px;
+  white-space: nowrap;
 }
 
 /** button style **/
@@ -27,6 +28,16 @@
 .btn-accented {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
+}
+
+.btn-white {
+  background-color: white;
+  border-color: white;
+}
+
+.btn-black {
+  background-color: black;
+  border-color: black;
 }
 
 /** outlined button **/

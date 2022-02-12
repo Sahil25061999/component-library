@@ -1,7 +1,7 @@
 @import '/index.css';
 
 .parent-container,
-.image-container {
+.image-temp-container {
   display: flex;
   margin: auto;
   width: 50%;
@@ -14,7 +14,7 @@
   object-fit: cover;
 }
 
-.image-container {
+.image-temp-container {
   height: 30rem;
   width: 30rem;
 }
