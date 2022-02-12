@@ -1,0 +1,10 @@
+@import '/index.css';
+
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 2px solid var(--primary-color-low-opacity);
+  margin-bottom: 1.5rem;
+  width: 70vw;
+}

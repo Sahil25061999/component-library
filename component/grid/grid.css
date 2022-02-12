@@ -1,0 +1,34 @@
+@import '/index.css';
+
+.grid-temp-container {
+  height: 20rem;
+  width: 40rem;
+  padding: 2rem;
+  margin: 1rem auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-2-sidebar {
+  grid-template-columns: 1fr 3fr;
+}
+
+.grid-3-sidebar {
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.grid-item {
+  background-color: blue;
+}
