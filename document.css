@@ -85,6 +85,7 @@ body {
   grid-column: 1 / span 2;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: rgba(238, 238, 238, 0.733);
   backdrop-filter: blur(8px);
   padding: 1rem 5rem;
@@ -106,10 +107,9 @@ body {
   height: 100vh;
   border-right: 1px solid rgba(0, 0, 0, 0.37);
   position: sticky;
-  /* width: 230px; */
+
   top: 4rem;
   padding-right: 1rem;
-  overflow-y: scroll;
 }
 
 .components {
