@@ -12,6 +12,7 @@
 @import '/component/grid/grid.css';
 @import '/component/list/list.css';
 @import '/component/text-utility/text.css';
+@import '/component/modal/modal.css';
 
 :root {
   --primary-color: hsl(234, 74%, 74%);
@@ -71,15 +72,35 @@ body {
   display: flex;
 }
 
-.margin-5 {
-  margin: 5px;
-}
-
 .margin-10 {
   margin: 10px;
 }
 .margin-r-10 {
   margin-right: 10px;
+}
+
+.margin-l-10 {
+  margin-left: 10px;
+}
+
+.margin-t-10 {
+  margin-left: 10px;
+}
+
+.margin-b-10 {
+  margin-bottom: 10px;
+}
+
+.margin-t-b-10 {
+  margin: 10px 0;
+}
+
+.margin-l-r-10 {
+  margin: 0 10px;
+}
+
+.margin-5 {
+  margin: 5px;
 }
 
 .margin-r-5 {
@@ -103,6 +124,10 @@ body {
   margin: 0 5px;
 }
 
+.padding-1r {
+  padding: 1rem;
+}
+
 .primary-color {
   background-color: var(--primary-color);
 }
@@ -116,5 +141,5 @@ body {
 }
 
 .shadow {
-  box-shadow: 4px 8px 32px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 8px 32px rgba(80, 74, 74, 0.13);
 }

@@ -1,0 +1,33 @@
+@import '/index.css';
+
+.modal {
+  position: relative;
+  min-height: 25rem;
+  width: 75%;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  overflow: hidden;
+}
+
+.modal .btn-float {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  height: 2rem;
+  width: 2rem;
+  z-index: 90;
+}
+
+.modal-image-container {
+  max-height: 25rem;
+  width: 100%;
+  border-radius: 2rem;
+}
