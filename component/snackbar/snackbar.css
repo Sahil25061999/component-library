@@ -21,6 +21,10 @@
   text-overflow: ellipsis;
 }
 
+.snackbar-left {
+  left: 0;
+}
+
 .snackbar-right {
   right: 0;
 }
@@ -56,4 +60,13 @@
 
 .snackbar-accent .btn {
   background: var(--accent-color);
+}
+
+.snackbar-error {
+  background: var(--failure-color);
+  box-shadow: 4px 8px 32px var(--failure-color-low-opacity);
+}
+
+.snackbar-error .btn {
+  background: var(--failure-color);
 }
