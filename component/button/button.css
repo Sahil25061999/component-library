@@ -107,7 +107,7 @@
 }
 
 .btn-float {
-  box-shadow: 4px 8px 16px rgba(173, 173, 173, 0.13);
+  box-shadow: 4px 8px 24px rgba(168, 168, 168, 0.329);
 }
 
 /** icon button **/
@@ -127,7 +127,7 @@
   background: var(--hover-color);
   color: var(--primary-text-color);
   border-color: var(--hover-color);
-  box-shadow: 4px 8px 32px rgba(80, 74, 74, 0.308);
+  box-shadow: 4px 8px 20px rgba(143, 143, 143, 0.308);
 }
 
 .btn-secondary:hover,
