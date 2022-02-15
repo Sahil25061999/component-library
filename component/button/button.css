@@ -175,3 +175,10 @@
   border-color: var(--secondary-text-color);
   color: var(--primary-text-color);
 }
+
+.btn-black:hover,
+.btn-white:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--primary-text-color);
+}
