@@ -164,14 +164,12 @@
   border: none;
 }
 
-.btn-black:hover,
 .btn-outline-white:hover {
   background-color: var(--primary-text-color);
   border-color: var(--primary-text-color);
   color: var(--secondary-text-color);
 }
 
-.btn-white:hover,
 .btn-outline-black:hover {
   background-color: var(--secondary-text-color);
   border-color: var(--secondary-text-color);
