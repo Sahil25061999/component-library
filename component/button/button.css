@@ -127,7 +127,7 @@
   background: var(--hover-color);
   color: var(--primary-text-color);
   border-color: var(--hover-color);
-  box-shadow: 4px 8px 20px rgba(143, 143, 143, 0.308);
+  box-shadow: 4px 8px 10px rgba(143, 143, 143, 0.308);
 }
 
 .btn-secondary:hover,
