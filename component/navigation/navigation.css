@@ -29,10 +29,6 @@
   display: flex;
 }
 
-.search-container {
-  background-color: aqua;
-}
-
 .navbar-item {
   margin-right: 0.5rem;
 }
