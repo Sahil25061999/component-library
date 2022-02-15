@@ -1,11 +1,27 @@
 @import '/index.css';
 body {
-  height: 100%;
-  width: 100%;
-  padding: 0;
+  width: 100vw;
+  height: 100vh;
+
   background-color: rgba(238, 238, 238, 0.733);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--muted-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  height: 3rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hover-color);
 }
 
 /** common classes**/
@@ -16,8 +32,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* max-width: 50vw;
-  width: 100%; */
+  min-width: 25rem;
+  box-shadow: inset 4px 8px 32px rgba(212, 212, 212, 0.692);
   background-color: white;
   padding: 2rem;
   border-radius: 1rem;
@@ -67,58 +83,90 @@ body {
 
 .code-preview {
   height: 25rem !important;
-  padding: 0;
+}
+
+iframe {
+  padding: 2;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 /** common classes end**/
 
 .layout {
-  height: 100%;
-  width: 100%;
+  width: 100vw;
   display: grid;
-  grid-template-columns: 230px 1fr;
-  column-gap: 2rem;
-  position: relative;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr;
+  overflow: hidden;
+  position: fixed;
 }
 
 .document-navbar {
-  grid-column: 1 / span 2;
+  grid-row: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(238, 238, 238, 0.733);
-  backdrop-filter: blur(8px);
+  background: var(--primary-text-color);
   padding: 1rem 5rem;
-  width: 100%;
-  position: fixed;
   z-index: 1000;
-  height: 4rem;
 }
 
 .document-navbar-link {
   display: flex;
 }
 
+.body {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 2rem;
+  background: aqua;
+  background-position: center;
+  background-size: fill;
+  background-image: url('/assets/images/get-started-background/bg5-light.jpg');
+  overflow: hidden;
+  height: 100vh;
+  /* width: 100vw; */
+}
+
 .sidebar {
-  grid-row-start: 2;
+  grid-column: 1;
+
+  backdrop-filter: blur(6px);
+
   display: flex;
   flex-direction: column;
-  padding-left: 4rem;
+  padding: 1rem 1rem 0.5rem 4rem;
+  overflow: scroll;
   height: 100vh;
-  border-right: 1px solid rgba(0, 0, 0, 0.37);
-  position: sticky;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
 
-  top: 4rem;
-  padding-right: 1rem;
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar:hover::-webkit-scrollbar {
+  display: block;
 }
 
 .components {
-  grid-row-start: 2;
-  grid-column-start: 2;
-  padding-right: 2rem;
-  margin-top: 5rem;
-  max-width: 75vw;
+  grid-column: 2;
   width: 100%;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.component-section {
+  padding-top: 1rem;
+  padding-right: 3rem;
+}
+
+.component-section:last-child {
+  margin-bottom: 5rem;
 }
 
 .component-title {
@@ -134,25 +182,87 @@ body {
   position: relative;
 }
 
-.snackbar-demo {
-  display: none;
+/*get started page*/
+
+.get-started-navbar {
+  box-shadow: none;
 }
+
+.get-started-body {
+  grid-template-columns: 1fr 1fr;
+}
+
+.get-started-section {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+
+.get-started-section.container {
+  border-radius: 1rem 0 0 1rem;
+}
+
+/* get started end*/
 
 @media only screen and (max-width: 56.25em) {
   body {
     font-size: 87.5%;
   }
-  .layout {
-    grid-template-columns: auto;
+
+  .body {
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+    /* row-gap: 2rem; */
+  }
+
+  .document-navbar {
+    padding: 0.5rem 2rem;
   }
 
   .sidebar {
-    display: none;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    height: min-content;
+    padding: 0.8rem;
+    width: 100vw;
   }
-}
 
-@media only screen and (max-width: 31.25em) {
-  body {
-    font-size: 75%;
+  .sidebar:hover::-webkit-scrollbar {
+    display: block;
+    height: 10px;
+  }
+
+  .sidebar:hover::-webkit-scrollbar-button {
+    width: 2px;
+  }
+
+  .components {
+    grid-row: 2;
+    grid-column: 1;
+    overflow: scroll;
+    padding: 2rem;
+  }
+
+  iframe {
+    width: 90vw;
+  }
+
+  /*get started*/
+
+  .get-started-body {
+    text-align: center;
+    grid-template-rows: 0.5fr min-content;
+  }
+
+  .get-started-body p {
+    text-align: center;
+    font-size: 1rem;
   }
 }
