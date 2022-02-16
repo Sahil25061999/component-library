@@ -119,7 +119,7 @@ iframe {
 .body {
   grid-row: 2;
   display: grid;
-  grid-template-columns: 0.2fr 1fr;
+  grid-template-columns: repeat(auto-fit, max-content);
   grid-template-rows: 1fr;
   column-gap: 2rem;
   background: aqua;
@@ -209,7 +209,7 @@ iframe {
 
 /* get started end*/
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 64em) {
   body {
     font-size: 87.5%;
   }

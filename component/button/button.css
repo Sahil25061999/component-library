@@ -160,10 +160,6 @@
   text-decoration: underline;
 }
 
-.btn-only-icon {
-  border: none;
-}
-
 .btn-black:hover,
 .btn-outline-white:hover {
   background-color: var(--primary-text-color);
