@@ -3,8 +3,11 @@
 .navbar {
   display: grid;
   grid-template-columns: repeat(3, minmax(max-content, auto));
+  /* grid-template-columns: 0.5fr repeat(2, 1fr); */
+  column-gap: 1rem;
   width: 100vw;
   padding: 8px 16px;
+  align-content: center;
   align-items: center;
   justify-items: center;
   backdrop-filter: blur(8px);
@@ -17,17 +20,17 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.navbar .textbox {
+  min-width: min-content;
+}
+
 .navbar-list,
 .search-container {
   display: flex;
 }
 
-.search-container {
-  align-items: center;
-}
-
 .navbar-item {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .navbar-item .btn {

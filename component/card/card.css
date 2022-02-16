@@ -11,7 +11,7 @@
   box-shadow: 4px 8px 32px rgba(0, 0, 0, 0.2);
 }
 
-.image-container {
+.card-image-container {
   height: 15rem;
 }
 
@@ -21,8 +21,7 @@
   top: 2%;
   height: 2rem;
   width: 2rem;
-
-  z-index: 1000;
+  z-index: 2;
 }
 
 /* .close {
@@ -61,6 +60,12 @@
 
 .card-subheading {
   font-size: 14px;
+  white-space: nowrap;
+}
+
+.card-pricing {
+  display: flex;
+  align-items: center;
 }
 
 .card-og-price {
@@ -78,7 +83,7 @@
   max-height: 240px;
 }
 
-.card-horizontal .image-container {
+.card-horizontal .card-image-container {
   grid-row: 1 / span 3;
 }
 

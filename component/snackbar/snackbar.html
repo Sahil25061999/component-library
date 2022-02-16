@@ -15,23 +15,29 @@
     <title>Snackbar</title>
   </head>
   <body>
-    <div class="snackbar snackbar-primary">
-      <p class="snackbar-content">This is a snackbar</p>
+    <div class="snackbar-container">
+      <div class="snackbar snackbar-primary snackbar-left">
+        <p class="snackbar-content">This is a snackbar</p>
+      </div>
     </div>
-    <div class="snackbar snackbar-secondary snackbar-right">
-      <p class="snackbar-content">This is a snackbar with close button</p>
-      <button class="btn btn-only-icon btn-link-accented">
-        <span class="fa-solid fa-arrow-rotate-right"></span>
-      </button>
-      <button class="btn btn-only-icon btn-link-accented">
-        <span class="fa-solid fa-xmark"></span>
-      </button>
+    <div class="snackbar-container">
+      <div class="snackbar snackbar-secondary snackbar-right">
+        <p class="snackbar-content">This is a snackbar with close button</p>
+        <button class="btn btn-only-icon btn-link-accented snackbar-retry-btn">
+          <span class="fa-solid fa-arrow-rotate-right"></span>
+        </button>
+        <button class="btn btn-only-icon btn-link-accented snackbar-close-btn">
+          <span class="fa-solid fa-xmark"></span>
+        </button>
+      </div>
     </div>
-    <div class="snackbar snackbar-accent snackbar-center">
-      <p class="snackbar-content">This is a snackbar with close button</p>
-      <button class="btn btn-only-icon btn">
-        <span class="fa-solid fa-xmark"></span>
-      </button>
+    <div class="snackbar-container">
+      <div class="snackbar snackbar-accent snackbar-center">
+        <p class="snackbar-content">This is a snackbar with close button</p>
+        <button class="btn btn-only-icon snackbar-close-btn">
+          <span class="fa-solid fa-xmark"></span>
+        </button>
+      </div>
     </div>
   </body>
 </html>

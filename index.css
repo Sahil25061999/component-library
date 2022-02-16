@@ -12,7 +12,8 @@
 @import '/component/grid/grid.css';
 @import '/component/list/list.css';
 @import '/component/text-utility/text.css';
-
+@import '/component/modal/modal.css';
+@import '/component/rating/rating.css';
 :root {
   --primary-color: hsl(234, 74%, 74%);
   --primary-color-low-opacity: hsl(234, 74%, 74%, 0.5);
@@ -21,8 +22,10 @@
   --warning-color: hsl(50, 94%, 69%);
   --success-color: hsl(120, 96%, 74%);
   --failure-color: hsl(0, 100%, 76%);
-  --active-color: hsl(234, 43%, 27%);
+  --failure-color-low-opacity: hsla(0, 100%, 76%, 0.644);
+  --active-color: hsl(234, 58%, 53%);
   --hover-color: hsl(234, 98%, 70%);
+  --secondary-hover-color: hsl(263, 68%, 69%);
   --light-mode: white;
   --dark-mode: rgb(56, 56, 56);
   --primary-text-color: white;
@@ -47,11 +50,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
   scroll-behavior: smooth;
-  /* padding: 0.5rem; */
 }
 
 a {
@@ -71,15 +70,35 @@ body {
   display: flex;
 }
 
-.margin-5 {
-  margin: 5px;
-}
-
 .margin-10 {
   margin: 10px;
 }
 .margin-r-10 {
   margin-right: 10px;
+}
+
+.margin-l-10 {
+  margin-left: 10px;
+}
+
+.margin-t-10 {
+  margin-left: 10px;
+}
+
+.margin-b-10 {
+  margin-bottom: 10px;
+}
+
+.margin-t-b-10 {
+  margin: 10px 0;
+}
+
+.margin-l-r-10 {
+  margin: 0 10px;
+}
+
+.margin-5 {
+  margin: 5px;
 }
 
 .margin-r-5 {
@@ -103,6 +122,10 @@ body {
   margin: 0 5px;
 }
 
+.padding-1r {
+  padding: 1rem;
+}
+
 .primary-color {
   background-color: var(--primary-color);
 }
@@ -116,5 +139,9 @@ body {
 }
 
 .shadow {
-  box-shadow: 4px 8px 32px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 8px 32px rgba(80, 74, 74, 0.274);
+}
+
+.modal-open {
+  overflow: hidden;
 }

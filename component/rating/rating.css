@@ -1,0 +1,10 @@
+@import '/index.css';
+
+.rating-element:hover {
+  color: var(--accent-hover-color);
+  cursor: pointer;
+}
+
+.rating-element.active {
+  color: var(--accent-color);
+}
