@@ -60,6 +60,12 @@
 
 .card-subheading {
   font-size: 14px;
+  white-space: nowrap;
+}
+
+.card-pricing {
+  display: flex;
+  align-items: center;
 }
 
 .card-og-price {

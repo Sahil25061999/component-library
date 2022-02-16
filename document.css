@@ -217,7 +217,7 @@ iframe {
   .body {
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr;
-    /* row-gap: 2rem; */
+    height: 100%;
   }
 
   .document-navbar {
@@ -229,6 +229,7 @@ iframe {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
+    overflow-y: hidden;
     height: min-content;
     padding: 0.8rem;
     width: 100vw;
