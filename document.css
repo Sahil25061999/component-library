@@ -122,20 +122,14 @@ iframe {
   grid-template-columns: repeat(auto-fit, max-content);
   grid-template-rows: 1fr;
   column-gap: 2rem;
-  background: aqua;
-  background-position: center;
-  background-size: fill;
-  background-image: url('/assets/images/get-started-background/bg5-light.jpg');
+
   overflow: hidden;
   height: 100vh;
-  /* width: 100vw; */
 }
 
 .sidebar {
   grid-column: 1;
-
-  backdrop-filter: blur(6px);
-
+  background-color: var(--accent-color);
   display: flex;
   flex-direction: column;
   padding: 1rem 1rem 0.5rem 4rem;
