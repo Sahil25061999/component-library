@@ -39,13 +39,6 @@
 
 /* reset css */
 
-.temp_container {
-  max-width: 35rem;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
 * {
   margin: 0;
   padding: 0;
