@@ -3,11 +3,33 @@
 .textbox {
   padding: 8px 1rem;
   border-radius: 0.4rem;
-  border: 3px solid rgba(114, 114, 114, 0.404);
-
+  border: 3px solid var(--secondary-text-color);
   outline: none;
   min-width: 18rem;
   width: 70%;
+  background: transparent;
+}
+
+.label {
+  color: var(--secondary-text-color);
+  font-weight: 600;
+  opacity: 0.8;
+  margin: 5px;
+}
+
+.label-success {
+  color: var(--success-color-dark);
+}
+.label-failure {
+  color: var(--failure-color-dark);
+}
+
+.label-disabled {
+  color: var(--muted-text-color);
+}
+
+.textbox-textarea {
+  background-color: var(--primary-text-color);
 }
 
 .textbox:focus,
@@ -22,4 +44,13 @@
 
 .textbox-fail {
   border-color: var(--failure-color);
+}
+
+.textbox-disabled,
+.textbox-disabled:hover {
+  border-color: var(--muted-color);
+}
+
+.textbox-disabled:hover {
+  box-shadow: none;
 }

@@ -21,7 +21,9 @@
   --secondary-color-low-opacity: hsl(262, 45%, 35%, 0.5);
   --warning-color: hsl(50, 94%, 69%);
   --success-color: hsl(120, 96%, 74%);
+  --success-color-dark: hsl(120, 89%, 40%);
   --failure-color: hsl(0, 100%, 76%);
+  --failure-color-dark: hsl(0, 57%, 53%);
   --failure-color-low-opacity: hsla(0, 100%, 76%, 0.644);
   --active-color: hsl(234, 58%, 53%);
   --hover-color: hsl(234, 98%, 70%);

@@ -995,42 +995,104 @@
             </p>
 
             <section class="container margin-t-b-2r">
-              <input
-                type="text "
-                class="textbox margin-b-1r"
-                placeholder="Something"
-              />
-              <input
-                type="text"
-                class="textbox textbox-success margin-b-1r"
-                placeholder="Success"
-              />
-              <input
-                type="text"
-                class="margin-b-1r textbox textbox-fail"
-                placeholder="fail"
-              />
+              <form action="" class="document-form">
+                <div class="document-form-inputs">
+                  <label for="textbox-default" class="label"
+                    >Default Label</label
+                  >
+                  <input
+                    id="textbox-default"
+                    type="text "
+                    class="textbox margin-b-1r"
+                    placeholder="Something"
+                  />
+                </div>
+                <div class="document-form-inputs">
+                  <label class="label label-success" for="textbox-success"
+                    >Success Label</label
+                  >
+                  <input
+                    id="textbox-success"
+                    type="text"
+                    class="textbox textbox-success margin-b-1r"
+                    placeholder="Success"
+                  />
+                </div>
+                <div class="document-form-inputs">
+                  <label class="label label-failure" for="textbox-fail"
+                    >Fail Label</label
+                  >
+                  <input
+                    id="textbox-fail"
+                    type="text"
+                    class="textbox textbox-fail margin-b-1r"
+                    placeholder="Fail"
+                  />
+                </div>
+                <div class="document-form-inputs">
+                  <label class="label label-disabled" for="textbox-disabled"
+                    >Disabled Label</label
+                  >
+                  <input
+                    disabled
+                    id="textbox-disabled"
+                    type="text"
+                    class="textbox textbox-disabled margin-b-1r"
+                    placeholder="Disabled"
+                  />
+                </div>
+                <div class="document-form-inputs">
+                  <label class="label" for="textbox-textarea">Textarea</label>
+                  <textarea
+                    id="textbox-textarea"
+                    cols="30"
+                    rows="5"
+                    class="textbox textbox-textarea"
+                  ></textarea>
+                </div>
+              </form>
             </section>
             <p class="description margin-t-b-1r">
               To use the above input style add
               <span class="secondary-text-color">.textbox</span> class. This
               will give the default style when the input is in neutral state.
+              And for the label give the
+              <span class="secondary-text-color">.label</span> class.
             </p>
             <p class="description margin-t-b-1r">
               For success input style add
               <span class="secondary-text-color"
                 >.textbox .textbox-success</span
               >
+              class. And for the label use
+              <span class="secondary-text-color">.label .label-success</span>
               class. This can be used to show a valid input.
             </p>
-            <p class="description margin-t-1r margin-b-2r">
+            <p class="description margin-t-1r">
               For unsuccessful input style add
               <span class="secondary-text-color">.textbox .textbox-fail</span>
-              class. This can be used to show invalid input.
+              class.For the label use
+              <span class="secondary-text-color">.label .label-failure </span
+              >class. This can be used to show invalid input.
+            </p>
+            <p class="description margin-t-1r">
+              For disabled input style add
+              <span class="secondary-text-color"
+                >.textbox .textbox-disabled
+              </span>
+              class.For the label use
+              <span class="secondary-text-color">.label .label-disabled </span
+              >class. This can be used to show disabled input.
+            </p>
+            <p class="description margin-t-1r margin-b-2r">
+              For textarea input style add
+              <span class="secondary-text-color"
+                >.textbox .textbox-textarea
+              </span>
+              class.
             </p>
             <iframe
-              scrolling="yes"
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522textbox%2522%2520placeholder%253D%2522Something%2522%2520%252F%253E%250A%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522textbox%2520textbox-success%2522%2520placeholder%253D%2522Success%2522%2520%252F%253E%250A%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522textbox%2520textbox-fail%2522%2520placeholder%253D%2522fail%2522%2520%252F%253E"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Clabel%2520for%253D%2522textbox-default%2522%2520class%253D%2522label%2522%253EDefault%2520Label%253C%252Flabel%253E%250A%253Cinput%2520id%253D%2522textbox-default%2522%2520type%253D%2522text%2520%2522%2520class%253D%2522textbox%2522%2520placeholder%253D%2522Something%2522%252F%253E%250A%250A%253Clabel%2520class%253D%2522label%2520label-success%2522%2520for%253D%2522textbox-success%2522%253ESuccess%2520Label%253C%252Flabel%253E%250A%253Cinput%2520id%253D%2522textbox-success%2522%2520type%253D%2522text%2522%2520class%253D%2522textbox%2520textbox-success%2522%2520placeholder%253D%2522Success%2522%252F%253E%250A%250A%253Clabel%2520class%253D%2522label%2520label-failure%2522%2520for%253D%2522textbox-fail%2522%253Efail%2520Label%253C%252Flabel%253E%250A%253Cinput%2520id%253D%2522textbox-fail%2522%2520type%253D%2522text%2522%2520class%253D%2522textbox%2520textbox-fail%2522%2520placeholder%253D%2522Fail%2522%252F%253E%250A%250A%253Clabel%2520class%253D%2522label%2520label-disabled%2522%2520for%253D%2522textbox-disabled%2522%253Edisabled%2520Label%253C%252Flabel%253E%250A%253Cinput%2520disabled%2520id%253D%2522textbox-disabled%2522%2520type%253D%2522text%2522%2520class%253D%2522textbox%2520textbox-disabled%2522%2520placeholder%253D%2522Disabled%2522%252F%253E%250A%250A%253Clabel%2520class%253D%2522label%2522%2520for%253D%2522textbox-textarea%2522%253ETextarea%253C%252Flabel%253E%250A%253Ctextarea%2520id%253D%2522textbox-textarea%2522%2520cols%253D%252230%2522%2520rows%253D%25225%2522%2520class%253D%2522textbox%2520textbox-textarea%2522%253E%253C%252Ftextarea%253E"
               sandbox="allow-scripts allow-same-origin"
             >
             </iframe>
