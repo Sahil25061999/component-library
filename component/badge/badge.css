@@ -12,7 +12,7 @@
 }
 
 .badge-icon {
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .badge {
@@ -57,7 +57,7 @@
 
 .badge-sm {
   font-size: 12px;
-  border-radius: 0.2rem;
+  border-radius: 3.2px;
 }
 
 .badge-md {

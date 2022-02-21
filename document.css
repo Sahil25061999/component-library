@@ -81,14 +81,15 @@ body {
   margin: 0 2rem;
 }
 
-.code-preview {
-  height: 25rem !important;
-}
-
 iframe {
   padding: 2;
   border-radius: 0.5rem;
-  overflow: hidden;
+  overflow-x: scroll;
+  min-width: 20rem;
+  width: 100%;
+  height: fit-content;
+  border: 0;
+  transform: scale(1);
 }
 
 .github-icon {
@@ -219,6 +220,8 @@ iframe {
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr;
     height: 100%;
+    width: 100vw;
+    justify-content: center;
   }
 
   .document-navbar {
