@@ -91,6 +91,10 @@ iframe {
   overflow: hidden;
 }
 
+.github-icon {
+  font-size: 1.3rem;
+}
+
 /** common classes end**/
 
 .layout {

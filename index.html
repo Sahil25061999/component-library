@@ -19,6 +19,14 @@
         <nav>
           <ul class="document-navbar-link list-style-none">
             <li>
+              <a
+                class="btn margin-r-5"
+                target="_blank"
+                href="https://github.com/Sahil25061999/component-library/tree/development"
+                ><span class="fa-brands fa-github github-icon"></span
+              ></a>
+            </li>
+            <li>
               <a class="btn margin-r-5 link-active" href="#">Documentation</a>
             </li>
             <li>
@@ -191,6 +199,7 @@
               <div class="avatar avatar-lg avatar-initials margin-1r">UN</div>
               <div class="avatar avatar-xlg avatar-initials margin-1r">UN</div>
             </section>
+
             <iframe
               src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=5px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xlg%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E"
               style="
@@ -339,7 +348,7 @@
                 Badges on text
               </div>
               <div class="badge-container margin-1r">
-                <div class="badge">3</div>
+                <div class="badge badge-round-md">3</div>
                 Badges on text with count
               </div>
               <div class="badge-container margin-1r">
@@ -358,20 +367,84 @@
               sandbox="allow-scripts allow-same-origin"
             >
             </iframe>
+
+            <!---------- Badge sizes --------------->
+            <h2 class="component-title margin-t-2r">Badge size variations</h2>
+            <p class="description margin-t-1r">
+              Badges have different size, the default badge has a height and
+              width of <span class="secondary-text-color">12px</span>. Following
+              are the different variations :
+            </p>
+            <ul class="description list-style-none margin-t-1r">
+              <li>
+                <span class="secondary-text-color margin-t-10"
+                  >badge-round-sm</span
+                >
+                has a height and width of
+                <span class="secondary-text-color">8px</span>
+              </li>
+              <li>
+                <span class="secondary-text-color margin-t-10"
+                  >badge-round-md</span
+                >
+                has a height and width of
+                <span class="secondary-text-color">16px</span>
+              </li>
+              <li>
+                <span class="secondary-text-color margin-t-10"
+                  >badge-round-lg</span
+                >
+                has a height and width of
+                <span class="secondary-text-color">18px</span>
+              </li>
+            </ul>
+            <section class="container margin-t-2r">
+              <div class="badge-container margin-1r">
+                <div class="badge badge-round-sm"></div>
+                <span class="fa-brands fa-amazon badge-icon"></span>
+              </div>
+              <div class="badge-container margin-1r">
+                <div class="badge badge-round-md">2</div>
+                <span class="fas fa-shopping-cart badge-icon"></span>
+              </div>
+              <div class="badge-container margin-1r">
+                <div class="badge badge-online badge-round-lg"></div>
+                <span class="fa-brands fa-amazon badge-icon"></span>
+              </div>
+            </section>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520badge-round-sm%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fa-brands%2520fa-amazon%2520badge-icon%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520badge-round-md%2522%253E2%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fas%2520fa-shopping-cart%2520badge-icon%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2509%253Cdiv%2520class%253D%2522badge%2520badge-online%2520badge-round-lg%2522%253E%253C%252Fdiv%253E%250A%2509%253Cspan%2520class%253D%2522fa-brands%2520fa-amazon%2520badge-icon%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+              style="
+                width: 680px;
+                height: 282px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+
             <!-- Badge on icons -->
             <h2 class="component-title margin-t-2r">Badge on icons</h2>
-            <p class="description margin-t-1r"></p>
+            <p class="description margin-t-1r">
+              Just like badge on text, badge on icon also works the same instead
+              of text use icons and give it the class
+              <span class="secondary-text-color">.badge-icon</span> which has a
+              default font size of
+              <span class="secondary-text-color">30px</span>
+            </p>
             <section class="container margin-t-b-2r">
               <div class="badge-container margin-1r">
                 <div class="badge"></div>
                 <span class="fa-brands fa-amazon badge-icon"></span>
               </div>
               <div class="badge-container margin-1r">
-                <div class="badge">2</div>
+                <div class="badge badge-round-md">2</div>
                 <span class="fas fa-shopping-cart badge-icon"></span>
               </div>
               <div class="badge-container margin-1r">
-                <div class="badge badge-accent">3</div>
+                <div class="badge badge-accent badge-round-md">3</div>
                 <span class="fa-solid fa-message badge-icon"></span>
               </div>
             </section>
@@ -380,6 +453,52 @@
               style="
                 width: 680px;
                 height: 282px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+
+            <!----------------- Badges on avatar -------------------------->
+            <h2 class="component-title margin-t-2r">Badges on avatar</h2>
+            <p class="description margin-t-1r">
+              To use this give the
+              <span class="secondary-text-color">.badge-avatar</span> class
+              alongwith <span class="secondary-text-color">.badge</span> class.
+              The <span class="secondary-text-color">.badge-avatar</span> is use
+              for positioning the badge.
+            </p>
+            <section class="container margin-t-b-2r">
+              <div class="badge-container margin-1r">
+                <div class="badge badge-avatar badge-round-lg"></div>
+                <div class="avatar avatar-xlg avatar-initials">UN</div>
+              </div>
+              <div class="badge-container margin-1r">
+                <div
+                  class="badge badge-avatar badge-online badge-round-lg"
+                ></div>
+                <div class="avatar avatar-xlg avatar-initials">UN</div>
+              </div>
+              <div class="badge-container margin-1r">
+                <div
+                  class="badge badge-avatar badge-offline badge-round-lg"
+                ></div>
+                <div class="avatar avatar-xlg">
+                  <img
+                    class="avatar-img"
+                    src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=389&q=80"
+                    alt="avatar"
+                  />
+                </div>
+              </div>
+            </section>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2520badge-avatar%2520badge-round-lg%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xlg%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2520badge-avatar%2520badge-online%2520badge-round-lg%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xlg%2520avatar-initials%2522%253EUN%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2520badge-avatar%2520badge-offline%2520badge-round-lg%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xlg%2522%253E%250A%2520%2520%2520%2520%2509%253Cimg%2520class%253D%2522avatar-img%2522%2520src%253D%2522%2522%2520alt%253D%2522avatar%2522%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              style="
+                width: 680px;
+                height: 319px;
                 border: 0;
                 transform: scale(1);
                 overflow: hidden;
