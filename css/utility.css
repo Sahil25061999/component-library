@@ -1,0 +1,277 @@
+:root {
+  --primary-color: hsl(234, 74%, 74%);
+  --primary-color-low-opacity: hsl(234, 74%, 74%, 0.5);
+  --secondary-color: hsl(262, 45%, 35%);
+  --secondary-color-low-opacity: hsl(262, 45%, 35%, 0.5);
+  --warning-color: hsl(50, 94%, 69%);
+  --success-color: hsl(120, 96%, 74%);
+  --success-color-dark: hsl(120, 89%, 40%);
+  --failure-color: hsl(0, 100%, 76%);
+  --failure-color-dark: hsl(0, 57%, 53%);
+  --failure-color-low-opacity: hsla(0, 100%, 76%, 0.644);
+  --active-color: hsl(234, 58%, 53%);
+  --hover-color: hsl(234, 98%, 70%);
+  --secondary-hover-color: hsl(263, 68%, 69%);
+  --light-mode: white;
+  --dark-mode: rgb(56, 56, 56);
+  --primary-text-color: white;
+  --secondary-text-color: black;
+  --muted-text-color: hsl(0, 0%, 48%);
+  --muted-color: hsla(0, 0%, 48%, 0.212);
+  --accent-color: hsl(50, 93%, 72%);
+  --accent-color-low-opacity: hsla(50, 93%, 72%, 0.5);
+  --accent-hover-color: hsl(50, 100%, 65%);
+}
+
+/* reset css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* reset css end */
+
+/******************************* utility classes **********************************************/
+
+/************* Margin and Padding ************/
+
+/* margin 5px */
+
+.margin-5 {
+  margin: 5px;
+}
+
+.margin-r-5 {
+  margin-right: 5px;
+}
+.margin-l-5 {
+  margin-left: 5px;
+}
+.margin-t-5 {
+  margin-top: 5px;
+}
+.margin-b-5 {
+  margin-bottom: 5px;
+}
+
+.margin-t-b-5 {
+  margin: 5px 0;
+}
+
+.margin-l-r-5 {
+  margin: 0 5px;
+}
+
+/* margin 10px */
+
+.margin-10 {
+  margin: 10px;
+}
+.margin-r-10 {
+  margin-right: 10px;
+}
+
+.margin-l-10 {
+  margin-left: 10px;
+}
+
+.margin-t-10 {
+  margin-left: 10px;
+}
+
+.margin-b-10 {
+  margin-bottom: 10px;
+}
+
+.margin-t-b-10 {
+  margin: 10px 0;
+}
+
+.margin-l-r-10 {
+  margin: 0 10px;
+}
+
+/* margin 1rem/16px */
+
+.margin-1r {
+  margin: 1rem;
+}
+
+.margin-t-1r {
+  margin-top: 1rem;
+}
+.margin-b-1r {
+  margin-bottom: 1rem;
+}
+
+.margin-t-b-1r {
+  margin: 1rem 0;
+}
+.margin-l-r-1r {
+  margin: 0 1rem;
+}
+
+/* margin 32px/2rem */
+
+.margin-2r {
+  margin: 2rem;
+}
+
+.margin-t-2r {
+  margin-top: 2rem;
+}
+
+.margin-b-2r {
+  margin-bottom: 2rem;
+}
+
+.margin-t-b-2r {
+  margin: 2rem 0;
+}
+
+.margin-l-r-2r {
+  margin: 0 2rem;
+}
+
+/* padding 5px */
+
+.padding-5 {
+  padding: 5px;
+}
+
+.padding-r-5 {
+  padding-right: 5px;
+}
+.padding-l-5 {
+  padding-left: 5px;
+}
+.padding-t-5 {
+  padding-top: 5px;
+}
+.padding-b-5 {
+  padding-bottom: 5px;
+}
+
+.padding-t-b-5 {
+  padding: 5px 0;
+}
+
+.padding-l-r-5 {
+  padding: 0 5px;
+}
+
+/* padding 10px */
+
+.padding-10 {
+  padding: 10px;
+}
+.padding-r-10 {
+  padding-right: 10px;
+}
+
+.padding-l-10 {
+  padding-left: 10px;
+}
+
+.padding-t-10 {
+  padding-left: 10px;
+}
+
+.padding-b-10 {
+  padding-bottom: 10px;
+}
+
+.padding-t-b-10 {
+  padding: 10px 0;
+}
+
+.padding-l-r-10 {
+  padding: 0 10px;
+}
+
+/* padding 16px/ 1rem */
+
+.padding-1r {
+  padding: 1rem;
+}
+
+.padding-t-1r {
+  padding-top: 1rem;
+}
+.padding-b-1r {
+  padding-bottom: 1rem;
+}
+
+.padding-t-b-1r {
+  padding: 1rem 0;
+}
+.padding-l-r-1r {
+  padding: 0 1rem;
+}
+
+/* padding 32px/ 2rem */
+
+.padding-2r {
+  padding: 2rem;
+}
+
+.padding-t-2r {
+  padding-top: 2rem;
+}
+
+.padding-b-2r {
+  padding-bottom: 2rem;
+}
+
+.padding-t-b-2r {
+  padding: 2rem 0;
+}
+
+.padding-l-r-2r {
+  padding: 0 2rem;
+}
+
+/*********************************** Flex *********************************/
+.d-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/************************* Color classes *******************************/
+
+.primary-color {
+  background-color: var(--primary-color);
+}
+
+.secondary-color {
+  background-color: var(--secondary-color);
+}
+
+.accent-color {
+  background-color: var(--accent-color);
+}
+
+/* shadow */
+
+.shadow {
+  box-shadow: 4px 8px 32px rgba(80, 74, 74, 0.274);
+}
+
+.modal-open {
+  overflow: hidden;
+}
