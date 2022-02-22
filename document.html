@@ -1,0 +1,2133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark-reasonable.min.css"
+      integrity="sha512-RwXJS3k4Z0IK6TGoL3pgQlA9g2THFhKL7z9TYWdAI8u6xK0AUuMWieJuWgTRayywC9A94ifUj1RzjDa1NIlUIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/css/document.css" />
+    <script src="/javascript/document.js" defer></script>
+    <title>MinUi | Documentation</title>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="document-navbar">
+        <h2 class="secondary-text-color">
+          Min<span class="accent-text-color">UI</span>
+        </h2>
+        <nav>
+          <ul class="document-navbar-link list-style-none">
+            <li>
+              <a
+                class="btn margin-r-5"
+                target="_blank"
+                href="https://github.com/Sahil25061999/component-library/tree/development"
+                ><span class="fa-brands fa-github github-icon"></span
+              ></a>
+            </li>
+            <li>
+              <a class="btn margin-r-5 link-active" href="#">Documentation</a>
+            </li>
+            <li>
+              <a class="btn" href="/index.html">Get Started</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="body">
+        <nav class="sidebar">
+          <a class="btn btn-link" href="#alert-section">Alert</a>
+          <a class="btn btn-link" href="#avatar-section">Avatar</a>
+
+          <a class="btn btn-link" href="#badge-section">Badge</a>
+          <a class="btn btn-link" href="#button-section">Button</a>
+          <a class="btn btn-link" href="#card-section">Card</a>
+          <a class="btn btn-link" href="#grid-section">Grid</a>
+          <a class="btn btn-link" href="#image-section">Image</a>
+          <a class="btn btn-link" href="#input-section">Input</a>
+          <a class="btn btn-link" href="#list-section">List</a>
+          <a class="btn btn-link" href="#modal-section">Modal</a>
+          <a class="btn btn-link" href="#navigation-section">Navigation</a>
+          <a class="btn btn-link" href="#rating-section">Rating</a>
+          <a class="btn btn-link" href="#snackbar-section">Snackbar</a>
+
+          <a class="btn btn-link" href="#typography-section">Typography</a>
+        </nav>
+        <main class="components">
+          <!-------------- Alert ----------------------->
+          <div id="alert-section" class="component-section alert-section">
+            <h1 class="component-title">Alert</h1>
+            <p class="description margin-t-1r">
+              Alert dialog is used to alert the user with some different
+              information. Alert can be of different types viz. success,
+              warning, failure etc.
+            </p>
+            <p class="description">
+              In order to use alert use the
+              <span class="secondary-text-color">.alert</span> class. For
+              different styling use the following classes alongwith the
+              <span class="secondary-text-color">.alert</span> :
+            </p>
+            <ul class="description list-style-none margin-t-1r">
+              <li>
+                <span class="secondary-text-color">.alert-default</span> for
+                displaying default alert.
+              </li>
+              <li>
+                <span class="secondary-text-color">.alert-success</span> for
+                displaying successful alert.
+              </li>
+              <li>
+                <span class="secondary-text-color">.alert-failure</span> for
+                displaying unsuccessful alert.
+              </li>
+              <li>
+                <span class="secondary-text-color">.alert-warning</span> for
+                displaying warning alert.
+              </li>
+            </ul>
+            <section class="container vertical-container margin-t-b-2r">
+              <div class="alert alert-default">
+                This is the default alert
+                <a href="#" class="alert-link">with link</a>.
+              </div>
+              <div class="alert alert-success">This is the success alert</div>
+              <div class="alert alert-failure">
+                This is the unsuccessful alert
+              </div>
+              <div class="alert alert-warning">This is the warning alert</div>
+            </section>
+            <pre><code class="language-html">&lt;div class="alert alert-default"&gt;This is the default alert&lt;
+ a href="#" class="alert-link"&gt;with link&lt;/a&gt;.
+&lt;/div&gt;
+&lt;div class="alert alert-success"&gt;This is the success alert&lt;/div&gt;
+&lt;div class="alert alert-failure"&gt;This is the unsuccessful alert&lt;/div&gt;
+&lt;div class="alert alert-warning"&gt;This is the warning alert&lt;/div&gt;</code></pre>
+
+            <!-- Outlined Alert -->
+            <h2 class="component-title margin-t-2r">Outlined Alert</h2>
+            <p class="description margin-t-1r">
+              Alert with just outlines can be used. To use outlined alert of
+              different styles use the following classes alongwith
+              <span class="secondary-text-color">.alert</span> class.
+            </p>
+            <ul class="description list-style-none margin-t-1r">
+              <li>
+                <span class="secondary-text-color">.alert-default-outline</span>
+                for displaying default alert.
+              </li>
+              <li>
+                <span class="secondary-text-color">.alert-success-outline</span>
+                for displaying successful alert.
+              </li>
+              <li>
+                <span class="secondary-text-color">.alert-failure-outline</span>
+                for displaying unsuccessful alert.
+              </li>
+              <li>
+                <span class="secondary-text-color">.alert-warning-outline</span>
+                for displaying warning alert.
+              </li>
+            </ul>
+            <section class="container vertical-container margin-t-b-2r">
+              <div class="alert alert-default-outline">
+                This is the default alert
+              </div>
+              <div class="alert alert-success-outline">
+                This is the success alert
+              </div>
+              <div class="alert alert-failure-outline">
+                This is the unsuccessful alert
+              </div>
+              <div class="alert alert-warning-outline">
+                This is the warning alert
+              </div>
+            </section>
+            <pre><code class="language-html">&lt;div class="alert alert-default-outline"&gt;This is the default alert&lt;/div&gt;
+&lt;div class="alert alert-success-outline"&gt;This is the success alert&lt;/div&gt;
+&lt;div class="alert alert-failure-outline"&gt;This is the unsuccessful alert&lt;/div&gt;
+&lt;div class="alert alert-warning-outline"&gt;This is the warning alert&lt;/div&gt;
+           </code></pre>
+          </div>
+          <!------------- Avatar --------------------------->
+
+          <div
+            id="avatar-section"
+            class="component-section avatar-section margin-t-2r"
+          >
+            <h1 class="component-title">Avatar</h1>
+            <p class="description margin-t-1r">
+              Avatar represent the picture of user, it can contain illustration,
+              the initials or the actual image of the user. Its size varies
+              depending on the use case.
+            </p>
+            <p class="description">
+              In order to use avatar you can use
+              <span class="secondary-text-color">.avatar </span>alongwith the
+              <span class="secondary-text-color"
+                >.avatar-xs, .avatar-sm, .avatar-md, .avatar-lg,
+                .avatar-xlg</span
+              >
+              for different sizes
+            </p>
+            <ul class="description list-style-none margin-t-1r">
+              <li>
+                <span class="secondary-text-color margin-t-10">avatar-xs</span>
+                has a height and width of
+                <span class="secondary-text-color">32px</span>
+              </li>
+              <li>
+                <span class="secondary-text-color margin-t-10">avatar-sm</span>
+                has a height and width of
+                <span class="secondary-text-color">40px</span>
+              </li>
+              <li>
+                <span class="secondary-text-color margin-t-10">avatar-md</span>
+                has a height and width of
+                <span class="secondary-text-color">48px</span>
+              </li>
+              <li>
+                <span class="secondary-text-color margin-t-10">avatar-lg</span>
+                has a height and width of
+                <span class="secondary-text-color">56px</span>
+              </li>
+              <li>
+                <span class="secondary-text-color margin-t-10">avatar-xlg</span>
+                has a height and width of
+                <span class="secondary-text-color">64px</span>
+              </li>
+            </ul>
+            <section class="container margin-t-b-2r">
+              <!---Avatar xs--->
+              <div class="avatar avatar-xs margin-1r">
+                <img
+                  class="avatar-img"
+                  src="assets/images/avatar/female2.svg"
+                  alt="avatar"
+                />
+              </div>
+
+              <!---Avatar sm--->
+              <div class="avatar avatar-sm margin-1r">
+                <img
+                  class="avatar-img"
+                  src="assets/images/avatar/female1.svg"
+                  alt="avatar"
+                />
+              </div>
+
+              <!---Avatar md--->
+              <div class="avatar avatar-md margin-1r">
+                <img
+                  class="avatar-img"
+                  src="assets/images/avatar/female3.svg"
+                  alt="avatar"
+                />
+              </div>
+
+              <!---Avatar lg--->
+              <div class="avatar avatar-lg margin-1r">
+                <img
+                  class="avatar-img"
+                  src="assets/images/avatar/male1.svg"
+                  alt="avatar"
+                />
+              </div>
+              <div class="avatar avatar-xlg margin-1r">
+                <img
+                  class="avatar-img"
+                  src="assets/images/avatar/male2.svg"
+                  alt="avatar"
+                />
+              </div>
+            </section>
+            <pre>
+              <code class="language-html">&lt;div class="avatar avatar-xs "&gt;
+    &lt;img class="avatar-img" src="assets/images/avatar/female2.svg" alt="avatar"/&gt;
+&lt;/div&gt;
+&lt;div class="avatar avatar-sm "&gt;
+  &lt;img
+    class="avatar-img"
+    src="assets/images/avatar/female1.svg"
+    alt="avatar"
+  /&gt;
+&lt;/div&gt;
+&lt;div class="avatar avatar-md margin-1r"&gt;
+  &lt;img
+    class="avatar-img"
+    src="assets/images/avatar/female3.svg"
+    alt="avatar"
+  /&gt;
+&lt;/div&gt;
+&lt;div class="avatar avatar-lg "&gt;
+  &lt;img
+    class="avatar-img"
+    src="assets/images/avatar/male1.svg"
+    alt="avatar"
+  /&gt;
+&lt;/div&gt;
+&lt;div class="avatar avatar-xlg "&gt;
+  &lt;img
+    class="avatar-img"
+    src="assets/images/avatar/male2.svg"
+    alt="avatar"
+  /&gt;
+&lt;/div&gt;
+            </code></pre>
+
+            <!---------------Text avatar-------------------------------->
+
+            <h2 class="component-title margin-t-2r">Text Avatar</h2>
+            <p class="description margin-t-1r">
+              An avatar which contains the initials, to use this use the default
+              class <span class="secondary-text-color">.avatar</span> alongwith
+              <span class="secondary-text-color">.avatar-initials</span> for
+              size variations the same classes can be used as the above.
+            </p>
+            <ul class="description list-style-none margin-t-1r">
+              <li>
+                <span class="secondary-text-color margin-t-10">avatar-xs</span>
+                has a font size of
+                <span class="secondary-text-color">12px</span>
+              </li>
+              <li>
+                <span class="secondary-text-color margin-t-10">avatar-sm</span>
+                has a font size of
+                <span class="secondary-text-color">16px</span>
+              </li>
+              <li>
+                <span class="secondary-text-color margin-t-10">avatar-md</span>
+                has a font size of
+                <span class="secondary-text-color">20px</span>
+              </li>
+              <li>
+                <span class="secondary-text-color margin-t-10">avatar-lg</span>
+                has a font size of
+                <span class="secondary-text-color">24px</span>
+              </li>
+              <li>
+                <span class="secondary-text-color margin-t-10">avatar-xlg</span>
+                has a font size of
+                <span class="secondary-text-color">28px</span>
+              </li>
+            </ul>
+            <section class="container margin-t-b-2r">
+              <div class="avatar avatar-xs avatar-initials margin-1r">UN</div>
+              <div class="avatar avatar-sm avatar-initials margin-1r">UN</div>
+              <div class="avatar avatar-md avatar-initials margin-1r">UN</div>
+              <div class="avatar avatar-lg avatar-initials margin-1r">UN</div>
+              <div class="avatar avatar-xlg avatar-initials margin-1r">UN</div>
+            </section>
+
+            <pre><code class="language-html">&lt;div class="avatar avatar-xs avatar-initials "&gt;UN&lt;/div&gt;
+&lt;div class="avatar avatar-sm avatar-initials &gt;UN&lt;/div&gt;
+&lt;div class="avatar avatar-md avatar-initials &gt;UN&lt;/div&gt;
+&lt;div class="avatar avatar-lg avatar-initials &gt;UN&lt;/div&gt;
+&lt;div class="avatar avatar-xlg avatar-initials &gt;UN&lt;/div&gt;
+            </code></pre>
+          </div>
+
+          <!-------------- Badge ------------------------->
+          <div
+            id="badge-section"
+            class="component-section badge-section margin-t-2r"
+          >
+            <h1 class="component-title">Badge</h1>
+            <p class="description margin-t-1r">
+              Badge are used to indicated a state of component. It can be used
+              to communicate whether a user is active or inactive, or an item is
+              trending, best seller etc.
+            </p>
+            <p class="description">
+              To use badge first create a container and give it the
+              <span class="secondary-text-color">.badge-container</span> class.
+              And then inside it create a span or div tag and give it the
+              <span class="secondary-text-color">.badge</span> class.
+            </p>
+            <section class="container margin-t-b-2r">
+              <div class="badge-container margin-1r">
+                <div class="badge"></div>
+                Badges on text
+              </div>
+              <div class="badge-container margin-1r">
+                <div class="badge badge-round-md">3</div>
+                Badges on text with count
+              </div>
+              <div class="badge-container margin-1r">
+                text badge<span class="badge-text">Hot</span>
+              </div>
+            </section>
+            <pre><code class="language-html">&lt;div class="badge-container"&gt;
+  &lt;div class="badge"&gt;&lt;/div&gt;
+  Badges on text
+  &lt;/div&gt;
+&lt;div class="badge-container"&gt;
+  &lt;div class="badge badge-round-md"&gt;3&lt;/div&gt;
+  Badges on text with count
+&lt;/div&gt;
+&lt;div class="badge-container"&gt;
+  text badge&lt;span class="badge-text"&gt;Hot&lt;/span&gt;
+&lt;/div&gt;
+            </code></pre>
+
+            <!---------- Badge sizes --------------->
+            <h2 class="component-title margin-t-2r">Badge size variations</h2>
+            <p class="description margin-t-1r">
+              Badges have different size, the default badge has a height and
+              width of <span class="secondary-text-color">12px</span>. Following
+              are the different variations :
+            </p>
+            <ul class="description list-style-none margin-t-1r">
+              <li>
+                <span class="secondary-text-color margin-t-10"
+                  >badge-round-sm</span
+                >
+                has a height and width of
+                <span class="secondary-text-color">8px</span>
+              </li>
+              <li>
+                <span class="secondary-text-color margin-t-10"
+                  >badge-round-md</span
+                >
+                has a height and width of
+                <span class="secondary-text-color">16px</span>
+              </li>
+              <li>
+                <span class="secondary-text-color margin-t-10"
+                  >badge-round-lg</span
+                >
+                has a height and width of
+                <span class="secondary-text-color">18px</span>
+              </li>
+            </ul>
+            <section class="container margin-t-b-2r">
+              <div class="badge-container margin-1r">
+                <div class="badge badge-round-sm"></div>
+                <span class="fa-brands fa-amazon badge-icon"></span>
+              </div>
+              <div class="badge-container margin-1r">
+                <div class="badge badge-round-md">2</div>
+                <span class="fas fa-shopping-cart badge-icon"></span>
+              </div>
+              <div class="badge-container margin-1r">
+                <div class="badge badge-online badge-round-lg"></div>
+                <span class="fa-brands fa-amazon badge-icon"></span>
+              </div>
+            </section>
+            <pre><code class="language-html">&lt;div class="badge-container "&gt;
+  &lt;div class="badge badge-round-sm"&gt;&lt;/div&gt;
+  &lt;span class="fa-brands fa-amazon badge-icon"&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="badge-container "&gt;
+  &lt;div class="badge badge-round-md"&gt;2&lt;/div&gt;
+  &lt;span class="fas fa-shopping-cart badge-icon"&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="badge-container "&gt;
+  &lt;div class="badge badge-online badge-round-lg"&gt;&lt;/div&gt;
+  &lt;span class="fa-brands fa-amazon badge-icon"&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+            <!-- Badge on icons -->
+            <h2 class="component-title margin-t-2r">Badge on icons</h2>
+            <p class="description margin-t-1r">
+              Just like badge on text, badge on icon also works the same instead
+              of text use icons and give it the class
+              <span class="secondary-text-color">.badge-icon</span> which has a
+              default font size of
+              <span class="secondary-text-color">30px</span>
+            </p>
+            <section class="container margin-t-b-2r">
+              <div class="badge-container margin-1r">
+                <div class="badge"></div>
+                <span class="fa-brands fa-amazon badge-icon"></span>
+              </div>
+              <div class="badge-container margin-1r">
+                <div class="badge badge-round-md">2</div>
+                <span class="fas fa-shopping-cart badge-icon"></span>
+              </div>
+              <div class="badge-container margin-1r">
+                <div class="badge badge-accent badge-round-md">3</div>
+                <span class="fa-solid fa-message badge-icon"></span>
+              </div>
+            </section>
+            <pre><code class="language-html">&lt;div class="badge-container "&gt;
+  &lt;div class="badge"&gt;&lt;/div&gt;
+  &lt;span class="fa-brands fa-amazon badge-icon"&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="badge-container "&gt;
+  &lt;div class="badge badge-round-md"&gt;2&lt;/div&gt;
+  &lt;span class="fas fa-shopping-cart badge-icon"&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="badge-container "&gt;
+  &lt;div class="badge badge-accent badge-round-md"&gt;3&lt;/div&gt;
+  &lt;span class="fa-solid fa-message badge-icon"&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+            <!----------------- Badges on avatar -------------------------->
+            <h2 class="component-title margin-t-2r">Badges on avatar</h2>
+            <p class="description margin-t-1r">
+              To use this give the
+              <span class="secondary-text-color">.badge-avatar</span> class
+              alongwith <span class="secondary-text-color">.badge</span> class.
+              The <span class="secondary-text-color">.badge-avatar</span> is use
+              for positioning the badge.
+            </p>
+            <section class="container margin-t-b-2r">
+              <div class="badge-container margin-1r">
+                <div class="badge badge-avatar badge-round-lg"></div>
+                <div class="avatar avatar-xlg avatar-initials">UN</div>
+              </div>
+              <div class="badge-container margin-1r">
+                <div
+                  class="badge badge-avatar badge-online badge-round-lg"
+                ></div>
+                <div class="avatar avatar-xlg avatar-initials">UN</div>
+              </div>
+              <div class="badge-container margin-1r">
+                <div
+                  class="badge badge-avatar badge-offline badge-round-lg"
+                ></div>
+                <div class="avatar avatar-xlg">
+                  <img
+                    class="avatar-img"
+                    src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=389&q=80"
+                    alt="avatar"
+                  />
+                </div>
+              </div>
+            </section>
+            <pre><code class="language-html">&lt;div class="badge-container"&gt;
+  &lt;div class="badge badge-avatar badge-round-lg"&gt;&lt;/div&gt;
+  &lt;div class="avatar avatar-xlg avatar-initials"&gt;UN&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="badge-container"&gt;
+  &lt;div class="badge badge-avatar badge-online badge-round-lg"&gt;&lt;/div&gt;
+  &lt;div class="avatar avatar-xlg avatar-initials"&gt;UN&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="badge-container"&gt;
+  &lt;div class="badge badge-avatar badge-offline badge-round-lg"&gt;&lt;/div&gt;
+  &lt;div class="avatar avatar-xlg"&gt;&lt;img class="avatar-img" src="" alt="avatar"/&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <!--Text Badges-->
+            <h2 class="component-title margin-t-2r">Text Badges</h2>
+            <p class="description margin-t-1r">
+              This are badges with text inside it. It can be used in product
+              cards to display the trending products or the best selling
+              products. Like circular badge we can use the text badge by
+              creating
+              <span class="secondary-text-color">.badge-container</span> class.
+              And then using
+              <span class="secondary-text-color">.badge-text</span> class.
+            </p>
+            <p class="description">
+              To use badges of different sizes use the
+              <span class="secondary-text-color"
+                >.badge-sm, .badge-md, .badge-lg</span
+              >
+              class.
+              <strong>This class are only applicable to text badges.</strong>
+            </p>
+            <p class="description">
+              To use badges of different color use
+              <span class="secondary-text-color"
+                >.badge-secondary, .badge-accent</span
+              >.
+            </p>
+            <p class="description">
+              <span class="secondary-text-color">.badge-text</span> has primary
+              color.
+            </p>
+            <section class="container margin-t-b-2r">
+              <div class="badge-container margin-1r">
+                iphone<span class="badge-text badge-sm">Hot</span>
+              </div>
+              <div class="badge-container margin-1r">
+                iphone<span class="badge-text badge-accent badge-md"
+                  >Best selling</span
+                >
+              </div>
+              <div class="badge-container margin-1r">
+                iphone<span class="badge-text badge-secondary badge-lg"
+                  >Best selling</span
+                >
+              </div>
+            </section>
+            <pre><code class="language-html">&lt;div class="badge-container margin-1r"&gt;
+  iphone&lt;span class="badge-text badge-sm"&gt;Hot&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="badge-container margin-1r"&gt;
+  iphone&lt;span class="badge-text badge-accent badge-md"&gt;Best selling&lt;/span&gt;
+]&lt;/div&gt;
+ &lt;div class="badge-container margin-1r"&gt;
+  iphone&lt;span class="badge-text badge-secondary badge-lg"&gt;Best selling&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+          </div>
+          <!------------------ Button --------------------->
+          <div
+            id="button-section"
+            class="button-section component-section margin-t-2r"
+          >
+            <h1 class="component-title">Button</h1>
+            <p class="description margin-t-1r">
+              Buttons are one of the main component of any application.
+              Different style of button signifies the level of importance. To
+              start using the button use the
+              <span class="secondary-text-color">.btn</span> class on the button
+              element.
+            </p>
+            <p class="description">
+              For styling the button component alongwith
+              <span class="secondary-text-color">.btn</span> class use the
+              <span class="secondary-text-color"
+                >.btn-primary, .btn-secondary, .btn-accented, .btn-black,
+                .btn-white</span
+              >
+              classes.
+            </p>
+            <section class="container margin-t-b-2r">
+              <button class="btn btn-primary margin-1r">Primary</button>
+              <button class="btn btn-secondary margin-1r">Secondary</button>
+              <button class="btn btn-accented margin-1r">Call to action</button>
+              <button class="btn btn-black margin-1r">Black button</button>
+              <button class="btn btn-white margin-1r">White button</button>
+            </section>
+            <pre><code class="language-html">&lt;button class="btn btn-primary "&gt;Primary&lt;/button&gt;
+&lt;button class="btn btn-secondary "&gt;Secondary&lt;/button&gt;
+&lt;button class="btn btn-accented "&gt;Call to action&lt;/button&gt;
+&lt;button class="btn btn-black "&gt;Black button&lt;/button&gt;
+&lt;button class="btn btn-white "&gt;White button&lt;/button&gt;
+            </code></pre>
+
+            <!-- Outlined Buttons -->
+            <h2 class="component-title margin-t-2r">Outlined Button</h2>
+            <p class="description margin-t-1r">
+              For outline button styling alongwith
+              <span class="secondary-text-color">.btn</span> class use the
+              <span class="secondary-text-color"
+                >.btn-outline-primary, .btn-outline-secondary,
+                .btn-outline-accented, .btn-outline-black,
+                .btn-outline-white</span
+              >
+            </p>
+            <section class="container margin-t-b-2r">
+              <button class="btn btn-outline-primary margin-1r">
+                Outlined
+              </button>
+              <button class="btn btn-outline-secondary margin-1r">
+                Outlined
+              </button>
+              <button class="btn btn-outline-accented margin-1r">
+                Outlined
+              </button>
+              <button class="btn btn-outline-black margin-1r">Outlined</button>
+            </section>
+            <pre><code class="language-html">&lt;button class="btn btn-outline-primary "&gt;Primary&lt;/button&gt;
+&lt;button class="btn btn-outline-secondary "&gt;Secondary&lt;/button&gt;
+&lt;button class="btn btn-outline-accented "&gt;Call to action&lt;/button&gt;
+&lt;button class="btn btn-outline-black "&gt;Black button&lt;/button&gt;
+&lt;button class="btn btn-outlinewhite "&gt;White button&lt;/button&gt;
+                          </code></pre>
+
+            <!-- Button with icons -->
+            <h2 class="component-title margin-t-2r">Button with icons</h2>
+            <p class="description margin-t-1r">
+              To use button with icon use any of the above class and give the
+              icon <span class="secondary-text-color">.btn-icon</span> class.
+              This class has a default margin-right of 4px.
+            </p>
+            <section class="container margin-t-b-2r">
+              <button class="btn btn-secondary margin-1r">
+                <span class="fas fa-heart btn-icon"></span>Icon
+              </button>
+              <button class="btn btn-primary margin-1r">
+                <span class="fas fa-heart btn-icon"></span>Icon
+              </button>
+              <button class="btn btn-accented margin-1r">
+                <span class="fas fa-heart btn-icon"></span>Icon
+              </button>
+            </section>
+            <pre><code class="language-html">&lt;button class="btn btn-secondary "&gt;
+  &lt;span class="fas fa-heart btn-icon"&gt;&lt;/span&gt;Icon
+&lt;/button&gt;
+&lt;button class="btn btn-primary "&gt;
+  &lt;span class="fas fa-heart btn-icon"&gt;&lt;/span&gt;Icon
+&lt;/button&gt;
+&lt;button class="btn btn-accented "&gt;
+  &lt;span class="fas fa-heart btn-icon"&gt;&lt;/span&gt;Icon
+&lt;/button&gt;</code></pre>
+
+            <!-- link button -->
+            <h2 class="component-title margin-t-2r">Link button</h2>
+            <p class="description margin-t-1r">
+              To use link buttons alongwith
+              <span class="secondary-text-color">.btn</span> class use
+              <span class="secondary-text-color"
+                >.btn-link, .btn-link-primary, .btn-link-secondary,
+                .btn-link-accented</span
+              >
+              class.
+            </p>
+            <section class="container margin-t-b-2r">
+              <a class="btn btn-link link-active margin-1r" href="#">link</a>
+              <a class="btn btn-link-primary margin-1r" href="#">link</a>
+              <a class="btn btn-link-secondary margin-1r" href="#">link2</a>
+              <a class="btn btn-link-accented margin-1r" href="#">link2</a>
+            </section>
+            <pre><code class="language-html">&lt;a class="btn btn-link link-active" href="#"&gt;link&lt;/a&gt;
+&lt;a class="btn btn-link-primary" href="#"&gt;link&lt;/a&gt;
+&lt;a class="btn btn-link-secondary" href="#"&gt;link2&lt;/a&gt;
+&lt;a class="btn btn-link-accented" href="#"&gt;link2&lt;/a&gt;
+            </code></pre>
+
+            <!-- Floating button -->
+            <h2 class="component-title margin-t-2r">Floating button</h2>
+            <p class="description margin-t-1r">
+              To use the floating buttons use the
+              <span class="secondary-text-color">.btn-float</span> class.
+            </p>
+            <section class="container margin-t-b-2r">
+              <button class="btn btn-float btn-accented margin-1r">
+                <span class="fa-solid fa-angle-up"></span>
+              </button>
+              <button class="btn btn-float btn-primary margin-1r">
+                <span class="fa-solid fa-angle-up"></span>
+              </button>
+              <button class="btn btn-float btn-outline-secondary margin-1r">
+                <span class="fa-solid fa-angle-up"></span>
+              </button>
+            </section>
+            <pre><code class="language-html">&lt;button class="btn btn-float btn-accented"&gt;
+  &lt;span class="fa-solid fa-angle-up"&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class="btn btn-float btn-primary"&gt;
+  &lt;span class="fa-solid fa-angle-up"&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class="btn btn-float btn-outline-secondary"&gt;
+  &lt;span class="fa-solid fa-angle-up"&gt;&lt;/span&gt;
+&lt;/button&gt;
+</code></pre>
+
+            <!-- Icon button -->
+            <h2 class="component-title margin-t-2r">Icon button</h2>
+            <p class="description margin-t-1r">
+              To use the buttons with icons only use
+              <span class="secondary-text-color">.btn-only-icon</span> class. To
+              style it use the
+              <span class="secondary-text-color"
+                >.btn-link-primary, .btn-link-secondary,
+                .btn-link-accented</span
+              >
+              class.
+            </p>
+            <section class="container margin-t-b-2r">
+              <button class="btn btn-only-icon margin-1r">
+                <span class="fas fa-heart"></span>
+              </button>
+              <button class="btn btn-only-icon btn-link-secondary margin-1r">
+                <span class="fas fa-heart"></span>
+              </button>
+              <button class="btn btn-only-icon btn-link-accented margin-1r">
+                <span class="fas fa-heart"></span>
+              </button>
+            </section>
+            <pre><code class="language-html">&lt;button class="btn btn-only-icon"&gt;&lt;span class="fas fa-heart"&gt;&lt;/span&gt;&lt;/button&gt;
+&lt;button class="btn btn-only-icon btn-link-secondary"&gt;&lt;span class="fas fa-heart"&gt;&lt;/span&gt;&lt;/button&gt;
+&lt;button class="btn btn-only-icon btn-link-accented"&gt;&lt;span class="fas fa-heart"&gt;&lt;/span&gt;&lt;/button&gt;</code></pre>
+          </div>
+
+          <!------------------- Card ---------------------->
+          <div
+            id="card-section"
+            class="component-section card-section margin-t-2r"
+          >
+            <h1 class="component-title">Card</h1>
+            <p class="description margin-t-1r">
+              Cards are the most used items in todays ui design. To use the card
+              component you can use the
+              <span class="secondary-text-color">.card</span> class. This will
+              give you a default vertical card. To use the close icon add button
+              element and give it the class
+              <span class="secondary-text-color">".btn .btn-float "</span>class.
+            </p>
+            <p class="description">
+              To use shadow on cards use the
+              <span class="secondary-text-color">.shadow</span> class
+            </p>
+            <section class="container margin-t-b-2r">
+              <div class="card margin-1r">
+                <div class="card-image-container">
+                  <img
+                    class="card-image"
+                    src="/assets/images/responsive image.jpg"
+                    alt="product-image"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="card-head">
+                  <h3 class="card-heading d-flex">
+                    Dog Black
+                    <span class="badge-text badge-sm badge-accent">Hot</span>
+                  </h3>
+                  <p class="card-subheading">by Jatin Sapru</p>
+                </div>
+                <div class="card-content">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Suscipit provident a voluptatum nesciunt quaerat eveniet
+                    fuga officiis reprehenderit natus voluptate temporibus
+                    debitis, maiores ratione ipsam cupiditate sunt ea quae id
+                    quas deleniti, animi unde. Dignissimos est aliquid nisi et
+                    eum atque, reiciendis ut? Rem ipsum in ducimus est inventore
+                    totam.
+                  </p>
+
+                  <h3 class="card-pricing">
+                    $50<span class="card-og-price small-text">$100</span>
+                    <span class="badge-text badge-sm badge-secondary"
+                      >50% off</span
+                    >
+                  </h3>
+                </div>
+                <div class="card-foot d-flex">
+                  <button class="btn btn-primary margin-r-5">Buy</button>
+                  <button class="btn btn-outline-secondary">add to cart</button>
+                  <button class="btn btn-only-icon">
+                    <span class="fas fa-heart"></span>
+                  </button>
+                </div>
+              </div>
+              <div class="card margin-1r">
+                <button class="btn btn-float btn-white">
+                  <span class="fa-solid fa-xmark"></span>
+                </button>
+                <div class="card-image-container">
+                  <img
+                    class="card-image"
+                    src="/assets/images/responsive image.jpg"
+                    alt="product-image"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="card-head">
+                  <h3 class="card-heading d-flex">
+                    Dog Black
+                    <span class="badge-text badge-sm badge-accent">Hot</span>
+                  </h3>
+                  <p class="card-subheading">by Jatin Sapru</p>
+                </div>
+                <div class="card-content">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+
+                  <h3 class="card-pricing">
+                    $50<span class="card-og-price small-text">$100</span>
+                    <span class="badge-text badge-sm badge-secondary"
+                      >50% off</span
+                    >
+                  </h3>
+                </div>
+                <div class="card-foot d-flex">
+                  <button class="btn btn-primary margin-r-5">Buy</button>
+                  <button class="btn btn-outline-secondary">add to cart</button>
+                  <button class="btn btn-only-icon">
+                    <span class="fas fa-heart"></span>
+                  </button>
+                </div>
+              </div>
+            </section>
+            <pre><code class="language-html">&lt;div class="card margin-1r"&gt;
+  &lt;div class="card-image-container"&gt;
+    &lt;img class="card-image" src="/assets/images/responsive image.jpg" alt="product-image" loading="lazy"/&gt;
+  &lt;/div&gt;
+  &lt;div class="card-head"&gt;
+    &lt;h3 class="card-heading d-flex"&gt;Dog Black&lt;span class="badge-text badge-sm badge-accent"&gt;Hot&lt;/span&gt;&lt;/h3&gt;
+    &lt;p class="card-subheading"&gt;by Jatin Sapru&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="card-content"&gt;
+    &lt;p&gt;Lorem ipsum dolor, sit amet consectetur ipsum in ducimus est inventore totam.
+    &lt;/p&gt;
+    &lt;h3 class="card-pricing"&gt;
+      $50&lt;span class="card-og-price small-text"&gt;$100&lt;/span&gt;
+      &lt;span class="badge-text badge-sm badge-secondary"&gt;50% off&lt;/span&gt;
+    &lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class="card-foot d-flex"&gt;
+    &lt;button class="btn btn-primary margin-r-5"&gt;Buy&lt;/button&gt;
+    &lt;button class="btn btn-outline-secondary"&gt;add to cart&lt;/button&gt;
+    &lt;button class="btn btn-only-icon"&gt;&lt;span class="fas fa-heart"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+            </code></pre>
+            <h2 class="component-title margin-t-b-1r">
+              Card with close button
+            </h2>
+            <pre><code class="language-html">&lt;div class="card margin-1r"&gt;
+&lt;button class="btn btn-float btn-white"&gt;
+  &lt;span class="fa-solid fa-xmark"&gt;&lt;/span&gt;
+&lt;/button&gt;
+  &lt;div class="card-image-container"&gt;
+    &lt;img class="card-image" src="/assets/images/responsive image.jpg" alt="product-image" loading="lazy"/&gt;
+  &lt;/div&gt;
+  &lt;div class="card-head"&gt;
+    &lt;h3 class="card-heading d-flex"&gt;Dog Black&lt;span class="badge-text badge-sm badge-accent"&gt;Hot&lt;/span&gt;&lt;/h3&gt;
+    &lt;p class="card-subheading"&gt;by Jatin Sapru&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="card-content"&gt;
+    &lt;p&gt;Lorem ipsum dolor, sit amet consectetur ipsum in ducimus est inventore totam.
+    &lt;/p&gt;
+    &lt;h3 class="card-pricing"&gt;
+      $50&lt;span class="card-og-price small-text"&gt;$100&lt;/span&gt;
+      &lt;span class="badge-text badge-sm badge-secondary"&gt;50% off&lt;/span&gt;
+    &lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class="card-foot d-flex"&gt;
+    &lt;button class="btn btn-primary margin-r-5"&gt;Buy&lt;/button&gt;
+    &lt;button class="btn btn-outline-secondary"&gt;add to cart&lt;/button&gt;
+    &lt;button class="btn btn-only-icon"&gt;&lt;span class="fas fa-heart"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+            <h2 class="component-title margin-t-2r">Horizontal Card</h2>
+            <p class="description margin-t-1r">
+              To use the horizontal card add
+              <span class="secondary-text-color">.card-horizontal</span> class.
+            </p>
+            <section class="container margin-t-b-2r">
+              <div class="card card-horizontal margin-1r">
+                <button class="btn btn-float">
+                  <span class="fa-solid fa-xmark"></span>
+                </button>
+                <div class="card-image-container">
+                  <img
+                    class="card-image"
+                    src="/assets/images/responsive image.jpg"
+                    alt="product-image"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="card-head">
+                  <h3 class="card-heading d-flex">
+                    Dog Black
+                    <span class="badge-text badge-sm badge-accent">Hot</span>
+                  </h3>
+                  <p class="card-subheading">by Jatin Sapru</p>
+                </div>
+                <div class="card-content">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Provident, eos perspiciatis! Deleniti minima culpa fuga,
+                    nisi veritatis nobis mollitia tempora!
+                  </p>
+
+                  <h3 class="card-pricing">
+                    $50<span class="card-og-price small-text">$100</span>
+                    <span class="badge-text badge-sm badge-secondary"
+                      >50% off</span
+                    >
+                  </h3>
+                </div>
+
+                <div class="card-foot d-flex">
+                  <button class="btn btn-primary margin-r-5">Buy</button>
+                  <button class="btn btn-outline-secondary">add to cart</button>
+                  <button class="btn btn-only-icon">
+                    <span class="fas fa-heart"></span>
+                  </button>
+                </div>
+              </div>
+            </section>
+            <pre><code class="language-html">&lt;div class="card margin-1r"&gt;
+&lt;button class="btn btn-float btn-white"&gt;
+  &lt;span class="fa-solid fa-xmark"&gt;&lt;/span&gt;
+&lt;/button&gt;
+  &lt;div class="card-image-container"&gt;
+    &lt;img class="card-image" src="/assets/images/responsive image.jpg" alt="product-image" loading="lazy"/&gt;
+  &lt;/div&gt;
+  &lt;div class="card-head"&gt;
+    &lt;h3 class="card-heading d-flex"&gt;Dog Black&lt;span class="badge-text badge-sm badge-accent"&gt;Hot&lt;/span&gt;&lt;/h3&gt;
+    &lt;p class="card-subheading"&gt;by Jatin Sapru&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="card-content"&gt;
+    &lt;p&gt;Lorem ipsum dolor, sit amet consectetur ipsum in ducimus est inventore totam.
+    &lt;/p&gt;
+    &lt;h3 class="card-pricing"&gt;
+      $50&lt;span class="card-og-price small-text"&gt;$100&lt;/span&gt;
+      &lt;span class="badge-text badge-sm badge-secondary"&gt;50% off&lt;/span&gt;
+    &lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class="card-foot d-flex"&gt;
+    &lt;button class="btn btn-primary margin-r-5"&gt;Buy&lt;/button&gt;
+    &lt;button class="btn btn-outline-secondary"&gt;add to cart&lt;/button&gt;
+    &lt;button class="btn btn-only-icon"&gt;&lt;span class="fas fa-heart"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <h2 class="component-title margin-t-2r">Text overlay Card</h2>
+            <p class="description margin-t-1r">
+              To use text overlay card add a div inside the card and give it a
+              <span class="secondary-text-color">.card-text-overlay</span>
+              class. Similarly the horizontal card can also be given
+              text-overlay.
+            </p>
+            <section class="container margin-t-b-2r">
+              <div class="card margin-1r">
+                <div class="card-text-overlay">
+                  <span class="badge-text badge-lg badge-secondary"
+                    >Out of stock</span
+                  >
+                </div>
+                <div class="card-image-container">
+                  <img
+                    class="card-image"
+                    src="/assets/images/responsive image.jpg"
+                    alt="product-image"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="card-head">
+                  <h3 class="card-heading d-flex">
+                    Dog Black
+                    <span class="badge-text badge-sm badge-accent">Hot</span>
+                  </h3>
+                  <p class="card-subheading">by Jatin Sapru</p>
+                </div>
+                <div class="card-content">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+
+                  <h3 class="card-pricing">
+                    $50<span class="card-og-price small-text">$100</span>
+                    <span class="badge-text badge-sm badge-secondary"
+                      >50% off</span
+                    >
+                  </h3>
+                </div>
+                <div class="card-foot d-flex">
+                  <button class="btn btn-primary margin-r-5">Buy</button>
+                  <button class="btn btn-outline-secondary">add to cart</button>
+                  <button class="btn btn-only-icon">
+                    <span class="fas fa-heart"></span>
+                  </button>
+                </div>
+              </div>
+            </section>
+            <pre><code class="language-html">&lt;div class="card"&gt;
+  &lt;div class="card-text-overlay"&gt;
+    &lt;span class="badge-text badge-lg badge-secondary"&gt;Out of stock&lt;/span&gt;
+  &lt;/div&gt;
+&lt;button class="btn btn-float btn-white"&gt;
+  &lt;span class="fa-solid fa-xmark"&gt;&lt;/span&gt;
+&lt;/button&gt;
+  &lt;div class="card-image-container"&gt;
+    &lt;img class="card-image" src="/assets/images/responsive image.jpg" alt="product-image" loading="lazy"/&gt;
+  &lt;/div&gt;
+  &lt;div class="card-head"&gt;
+    &lt;h3 class="card-heading d-flex"&gt;Dog Black&lt;span class="badge-text badge-sm badge-accent"&gt;Hot&lt;/span&gt;&lt;/h3&gt;
+    &lt;p class="card-subheading"&gt;by Jatin Sapru&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="card-content"&gt;
+    &lt;p&gt;Lorem ipsum dolor, sit amet consectetur ipsum in ducimus est inventore totam.
+    &lt;/p&gt;
+    &lt;h3 class="card-pricing"&gt;
+      $50&lt;span class="card-og-price small-text"&gt;$100&lt;/span&gt;
+      &lt;span class="badge-text badge-sm badge-secondary"&gt;50% off&lt;/span&gt;
+    &lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class="card-foot d-flex"&gt;
+    &lt;button class="btn btn-primary margin-r-5"&gt;Buy&lt;/button&gt;
+    &lt;button class="btn btn-outline-secondary"&gt;add to cart&lt;/button&gt;
+    &lt;button class="btn btn-only-icon"&gt;&lt;span class="fas fa-heart"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+            <h2 class="component-title margin-t-2r">Text Card</h2>
+            <p class="description margin-t-1r">
+              To use text card add<span class="secondary-text-color"
+                >.card-only-text</span
+              >
+              class. And remove the image and button div.
+            </p>
+            <section class="container margin-t-b-2r">
+              <div class="card card-only-text margin-1r">
+                <div class="card-head">
+                  <h3 class="card-heading d-flex">
+                    Dog Black
+                    <span class="badge-text badge-sm badge-accent"
+                      >Trending</span
+                    >
+                  </h3>
+                  <p class="card-subheading">by Jatin Sapru</p>
+                </div>
+                <div class="card-content">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <pre><code class="language-html">&lt;div class="card"&gt;
+
+  &lt;div class="card-head"&gt;
+    &lt;h3 class="card-heading d-flex"&gt;Dog Black&lt;span class="badge-text badge-sm badge-accent"&gt;Hot&lt;/span&gt;&lt;/h3&gt;
+    &lt;p class="card-subheading"&gt;by Jatin Sapru&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="card-content"&gt;
+    &lt;p&gt;Lorem ipsum dolor, sit amet consectetur ipsum in ducimus est inventore totam.
+    &lt;/p&gt;
+    &lt;h3 class="card-pricing"&gt;
+      $50&lt;span class="card-og-price small-text"&gt;$100&lt;/span&gt;
+      &lt;span class="badge-text badge-sm badge-secondary"&gt;50% off&lt;/span&gt;
+    &lt;/h3&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;
+</code></pre>
+          </div>
+
+          <!-------------------------- Grid ----------------------------->
+          <div id="grid-section" class="component-section margin-t-2r">
+            <h1 class="component-title">Grid</h1>
+            <p class="description margin-t-1r">
+              Grid can be used for basic alignment of content. To align content
+              in two equal columns apply
+              <span class="secondary-text-color">.grid-container .grid-2</span>
+              class. The
+              <span class="secondary-text-color">.grid-container</span> class
+              sets the display to grid, and the
+              <span class="secondary-text-color">.grid-2</span> divides the
+              layout.
+            </p>
+            <section class="container margin-t-b-2r">
+              <div
+                class="grid-temp-container grid-container grid-2 primary-color"
+              >
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+              </div>
+            </section>
+            <pre><code class="language-html">
+&lt;div class="grid-container grid-2 primary-color"&gt;
+  &lt;div class="grid-item"&gt;&lt;/div&gt;
+  &lt;div class="grid-item"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <p class="description margin-t-2r">
+              To align content in three equal columns apply
+              <span class="secondary-text-color">.grid-container .grid-3</span>
+              class
+            </p>
+            <section class="container margin-t-b-2r">
+              <div
+                class="grid-temp-container grid-container grid-3 primary-color"
+              >
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+              </div>
+            </section>
+
+            <pre><code class="layout-html">
+&lt;div class="grid-temp-container grid-container grid-3 primary-color"&gt;
+  &lt;div class="grid-item"&gt;&lt;/div&gt;
+  &lt;div class="grid-item"&gt;&lt;/div&gt;
+  &lt;div class="grid-item"&gt;&lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+
+            <p class="description margin-t-2r">
+              To align content in sidebar and a main section apply
+              <span class="secondary-text-color"
+                >.grid-container .grid-2-sidebar</span
+              >
+              class
+            </p>
+            <section class="container margin-t-b-2r">
+              <div
+                class="grid-temp-container grid-container grid-2-sidebar primary-color"
+              >
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+              </div>
+            </section>
+            <pre><code class="layout-html">
+&lt;div class="grid-container grid-2-sidebar primary-color"&gt;
+  &lt;div class="grid-item"&gt;&lt;/div&gt;
+  &lt;div class="grid-item"&gt;&lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+            <p class="description margin-t-2r">
+              To align content in two sidebar and a main section apply
+              <span class="secondary-text-color"
+                >.grid-container .grid-3-sidebar</span
+              >
+              class
+            </p>
+            <section class="container margin-t-b-2r">
+              <div
+                class="grid-temp-container grid-container grid-3-sidebar primary-color"
+              >
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+              </div>
+            </section>
+            <pre><code class="layout-html">
+&lt;div class=" grid-container grid-3-sidebar primary-color"&gt;
+  &lt;div class="grid-item"&gt;&lt;/div&gt;
+  &lt;div class="grid-item"&gt;&lt;/div&gt;
+  &lt;div class="grid-item"&gt;&lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+          </div>
+
+          <!---------------------Image-------------------->
+          <div
+            id="image-section"
+            class="component-section image-section margin-t-2r"
+          >
+            <h1 class="component-title">Image</h1>
+            <p class="description margin-t-1r">
+              Images are used almost everywhere, a good responsive image can
+              enhace the look of a site much more than a stretched pixelated
+              image.
+            </p>
+            <h2 class="component-title margin-t-1r">Responsive image</h2>
+            <p class="description margin-t-1r">
+              In order to make your image responsive add
+              <span class="secondary-text-color">.responsive-img</span> class on
+              the image tag.
+            </p>
+            <section class="container margin-t-b-2r">
+              <img
+                class="responsive-img"
+                src="/assets/images/lansdscape.jpg"
+                alt="responsive image"
+              />
+            </section>
+            <pre><code class="language-html">&lt;img class="responsive-img" src="/assets/images/lansdscape.jpg" alt="responsive image"/&gt;</code></pre>
+            <h2 class="component-title margin-t-1r">Circular image</h2>
+            <p class="description margin-t-1r">
+              In order to make your image circular enclose it in a div tag of
+              equal width and height and add
+              <span class="secondary-text-color">.rounded-img</span> class on
+              the image tag.
+            </p>
+            <section class="container margin-t-b-2r">
+              <div class="image-temp-container">
+                <img
+                  class="rounded-img"
+                  src="/assets/images/lansdscape.jpg"
+                  alt="responsive image"
+                />
+              </div>
+            </section>
+            <pre><code class="language-html">&lt;div class="image-temp-container"&gt;
+  &lt;img class="rounded-img" src="/assets/images/lansdscape.jpg" alt="responsive image"/&gt;
+&lt;/div&gt;
+            </code></pre>
+          </div>
+
+          <!------------------ Input Section -------------------->
+          <div
+            id="input-section"
+            class="component-section input-section margin-t-2r"
+          >
+            <h1 class="component-title">Input</h1>
+            <p class="description margin-t-1r">
+              Input box are used alot from searching to signing up forms. Input
+              has different states, this states are great way to give feedback
+              to the user.Some of these states can be success state where the
+              user has added the correct input value,a failure state where the
+              user has added wrong input value and a disabled state.
+            </p>
+
+            <section class="container margin-t-b-2r">
+              <form action="" class="document-form">
+                <div class="document-form-inputs">
+                  <label for="textbox-default" class="label"
+                    >Default Label</label
+                  >
+                  <input
+                    id="textbox-default"
+                    type="text "
+                    class="textbox margin-b-1r"
+                    placeholder="Something"
+                  />
+                </div>
+                <div class="document-form-inputs">
+                  <label class="label label-success" for="textbox-success"
+                    >Success Label</label
+                  >
+                  <input
+                    id="textbox-success"
+                    type="text"
+                    class="textbox textbox-success margin-b-1r"
+                    placeholder="Success"
+                  />
+                </div>
+                <div class="document-form-inputs">
+                  <label class="label label-failure" for="textbox-fail"
+                    >Fail Label</label
+                  >
+                  <input
+                    id="textbox-fail"
+                    type="text"
+                    class="textbox textbox-fail margin-b-1r"
+                    placeholder="Fail"
+                  />
+                </div>
+                <div class="document-form-inputs">
+                  <label class="label label-disabled" for="textbox-disabled"
+                    >Disabled Label</label
+                  >
+                  <input
+                    disabled
+                    id="textbox-disabled"
+                    type="text"
+                    class="textbox textbox-disabled margin-b-1r"
+                    placeholder="Disabled"
+                  />
+                </div>
+                <div class="document-form-inputs">
+                  <label class="label" for="textbox-textarea">Textarea</label>
+                  <textarea
+                    id="textbox-textarea"
+                    cols="30"
+                    rows="5"
+                    class="textbox textbox-textarea"
+                  ></textarea>
+                </div>
+              </form>
+            </section>
+            <p class="description margin-t-b-1r">
+              To use the above input style add
+              <span class="secondary-text-color">.textbox</span> class. This
+              will give the default style when the input is in neutral state.
+              And for the label give the
+              <span class="secondary-text-color">.label</span> class.
+            </p>
+            <p class="description margin-t-b-1r">
+              For success input style add
+              <span class="secondary-text-color"
+                >.textbox .textbox-success</span
+              >
+              class. And for the label use
+              <span class="secondary-text-color">.label .label-success</span>
+              class. This can be used to show a valid input.
+            </p>
+            <p class="description margin-t-1r">
+              For unsuccessful input style add
+              <span class="secondary-text-color">.textbox .textbox-fail</span>
+              class.For the label use
+              <span class="secondary-text-color">.label .label-failure </span
+              >class. This can be used to show invalid input.
+            </p>
+            <p class="description margin-t-1r">
+              For disabled input style add
+              <span class="secondary-text-color"
+                >.textbox .textbox-disabled
+              </span>
+              class.For the label use
+              <span class="secondary-text-color">.label .label-disabled </span
+              >class. This can be used to show disabled input.
+            </p>
+            <p class="description margin-t-1r margin-b-2r">
+              For textarea input style add
+              <span class="secondary-text-color"
+                >.textbox .textbox-textarea
+              </span>
+              class.
+            </p>
+            <pre><code class="language-html">&lt;label for="textbox-default" class="label"&gt;Default Label&lt;/label&gt;
+&lt;input id="textbox-default" type="text " class="textbox margin-b-1r" placeholder="Something"/&gt;
+
+&lt;label class="label label-success" for="textbox-success"&gt;Success Label&lt;/label&gt;
+&lt;input id="textbox-success" type="text" class="textbox textbox-success margin-b-1r" placeholder="Success"/&gt;
+
+&lt;label class="label label-failure" for="textbox-fail"&gt;fail Label&lt;/label&gt;
+&lt;input id="textbox-fail" type="text" class="textbox textbox-fail margin-b-1r" placeholder="fail"/&gt;
+
+&lt;label class="label label-disabled" for="textbox-disabled"&gt;disabled Label&lt;/label&gt;
+&lt;input id="textbox-disabled" type="text" class="textbox textbox-disabled margin-b-1r" placeholder="disabled"/&gt;
+
+&lt;label class="label" for="textbox-textarea"&gt;Textarea&lt;/label&gt;
+&lt;textarea id="textbox-textarea" cols="30" rows="5" class="textbox textbox-textarea"&gt;&lt;/textarea&gt;
+
+</code></pre>
+          </div>
+
+          <!----------------------- list ------------------------------>
+          <div id="list-section" class="component-section margin-t-2r">
+            <h1 class="component-title">List</h1>
+            <p class="description margin-t-1r">
+              List can be of different type. They can vary from simple bulleted
+              list to a roman numbered list. To use a simple list i.e without
+              any bullets or ordering use
+              <span class="secondary-text-color">.list-style-none</span> class
+              on the ol or ul tag. <br />To use horizontal list apply
+              <span class="secondary-text-color">.list-horizontal</span>
+              class.To use different style of list you can apply
+              <span class="secondary-text-color"
+                >.list-style-circle, .list-style-square, .list-style-decimal,
+                .list-style-zero-decimal</span
+              >
+            </p>
+            <section class="container margin-t-b-2r">
+              <ul class="margin-l-r-1r">
+                <li>item 1</li>
+                <li>item 1</li>
+                <li>item 1</li>
+              </ul>
+
+              <ul class="list-style-circle margin-l-r-2r">
+                <li>item 1</li>
+                <li>item 1</li>
+                <li>item 1</li>
+              </ul>
+
+              <ul class="list-style-square margin-l-r-2r">
+                <li>item 1</li>
+                <li>item 1</li>
+                <li>item 1</li>
+              </ul>
+
+              <ul class="list-style-decimal margin-l-r-2r">
+                <li>item 1</li>
+                <li>item 1</li>
+                <li>item 1</li>
+              </ul>
+
+              <ul class="list-style-zero-decimal margin-l-r-2r">
+                <li>item 1</li>
+                <li>item 1</li>
+                <li>item 1</li>
+              </ul>
+              <ul class="list-style-none list-horizontal margin-l-r-2r">
+                <li class="margin-r-5">item 1</li>
+                <li class="margin-r-5">item 1</li>
+                <li class="margin-r-5">item 1</li>
+              </ul>
+            </section>
+            <pre><code class="layout-html">
+&lt;ul&gt;
+  &lt;li&gt;item 1&lt;/li&gt;
+  &lt;li&gt;item 1&lt;/li&gt;
+  &lt;li&gt;item 1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="list-style-circle "&gt;
+  &lt;li&gt;item 1&lt;/li&gt;
+  &lt;li&gt;item 1&lt;/li&gt;
+  &lt;li&gt;item 1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="list-style-square "&gt;
+  &lt;li&gt;item 1&lt;/li&gt;
+  &lt;li&gt;item 1&lt;/li&gt;
+  &lt;li&gt;item 1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="list-style-decimal "&gt;
+  &lt;li&gt;item 1&lt;/li&gt;
+  &lt;li&gt;item 1&lt;/li&gt;
+  &lt;li&gt;item 1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="list-style-zero-decimal "&gt;
+  &lt;li&gt;item 1&lt;/li&gt;
+  &lt;li&gt;item 1&lt;/li&gt;
+  &lt;li&gt;item 1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="list-style-none list-horizontal "&gt;
+  &lt;li class="margin-r-5"&gt;item 1&lt;/li&gt;
+  &lt;li class="margin-r-5"&gt;item 1&lt;/li&gt;
+  &lt;li class="margin-r-5"&gt;item 1&lt;/li&gt;
+&lt;/ul&gt;              
+            </code></pre>
+            <h2 class="margin-t-b-1r component-title">Stacked List</h2>
+            <p class="description">
+              In order to used stacked list use
+              <span class="secondary-text-color">.list-stacked</span> class in
+              the ul tag.
+            </p>
+            <section class="container margin-t-b-2r">
+              <ul class="list-stacked">
+                <li class="list-item">
+                  <div class="avatar avatar-sm avatar-initials margin-r-10">
+                    SP
+                  </div>
+                  someone liked your image
+                </li>
+                <li class="list-item">
+                  <span class="fas fa-shopping-cart margin-r-10"></span
+                  >something is waiting in your cart
+                </li>
+                <li class="list-item">
+                  <span class="fa-solid fa-bell margin-r-10"></span>sale will be
+                  live in 30 min
+                </li>
+              </ul>
+            </section>
+            <pre><code class="layout-html">
+&lt;ul class="list-stacked"&gt;
+  &lt;li class="list-item"&gt;
+    &lt;div class="avatar avatar-sm avatar-initials margin-r-10"&gt;
+      SP
+    &lt;/div&gt;
+    someone liked your image
+  &lt;/li&gt;
+  &lt;li class="list-item"&gt;
+    &lt;span class="fas fa-shopping-cart margin-r-10"&gt;&lt;/span&gt;
+    something is waiting in your cart
+  &lt;/li&gt;
+  &lt;li class="list-item"&gt;
+    &lt;span class="fa-solid fa-bell margin-r-10"&gt;&lt;/span&gt;sale will be live in 30 min
+  &lt;/li&gt;
+&lt;/ul&gt;
+            </code></pre>
+          </div>
+
+          <!-------------------- Modal -------------------------------->
+          <div
+            id="modal-section"
+            class="modal-section component-section margin-t-2r"
+          >
+            <h1 class="component-title">Modal</h1>
+            <p class="description margin-t-1r">
+              Modal have a wide variety of use case, it can be used to display a
+              offer or as a prompt to user for signing up to a newsletter etc.
+              Modal can containe plain text or images. Modal can be used by
+              giving a
+              <span class="secondary-text-color">.modal-container</span> class
+              to a parent container and then giving the
+              <span class="secondary-text-color">.modal</span> class to child
+              container.
+            </p>
+            <section class="container margin-t-b-2r">
+              <div class="modal shadow padding-1r">
+                <button class="btn btn-float close">
+                  <span class="fa-solid fa-xmark"></span>
+                </button>
+                <div class="modal-head margin-t-b-5">
+                  <h1 class="modal-heading">Diwali Sale</h1>
+                </div>
+                <div class="modal-content margin-b-10 padding-1r">
+                  <p class="medium-text muted-text-color">
+                    Hurry!!! limited time deal on all products.
+                  </p>
+                </div>
+                <div class="modal-foot margin-t-5">
+                  <button class="btn btn-accented">Shop</button>
+                </div>
+              </div>
+            </section>
+            <pre><code class="layout-html">
+&lt;div class="modal shadow padding-1r"&gt;
+&lt;button class="btn btn-float close"&gt;
+&lt;span class="fa-solid fa-xmark"&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;div class="modal-head margin-t-b-5"&gt;
+&lt;h1 class="modal-heading"&gt;Diwali Sale&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div class="modal-content margin-b-10 padding-1r"&gt;
+&lt;p class="medium-text muted-text-color"&gt;
+Hurry!!! limited time deal on all products.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="modal-foot margin-t-5"&gt;
+&lt;button class="btn btn-accented"&gt;Shop&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+ </code></pre>
+            <p class="description margin-t-2r">
+              Modal with image can be used by giving a
+              <span class="secondary-text-color">.modal .modal-with-image</span>
+              class to a element and using
+              <span class="secondary-text-color">.modal-image-container</span>
+              inside it
+            </p>
+            <section class="container margin-t-b-2r">
+              <div class="modal modal-with-image shadow padding-1r">
+                <button class="btn btn-float close">
+                  <span class="fa-solid fa-xmark"></span>
+                </button>
+                <div class="modal-head margin-t-b-5">
+                  <h1 class="modal-heading">Diwali Sale</h1>
+                </div>
+
+                <div class="modal-content medium-text margin-b-10 padding-1r">
+                  <div class="modal-image-container margin-b-10">
+                    <img
+                      class="responsive-img"
+                      src="/assets/images/lansdscape.jpg"
+                      loading
+                    />
+                  </div>
+                  <p class="margin-t-5"></p>
+                </div>
+                <div class="modal-foot margin-t-5">
+                  <button class="btn btn-accented">Shop</button>
+                </div>
+              </div>
+            </section>
+            <pre><code class="layout-html">
+&lt;div class="modal modal-with-image shadow padding-1r"&gt;
+&lt;button class="btn btn-float close"&gt;
+&lt;span class="fa-solid fa-xmark"&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;div class="modal-head margin-t-b-5"&gt;
+&lt;h1 class="modal-heading"&gt;Diwali Sale&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;div class="modal-content medium-text margin-b-10 padding-1r"&gt;
+&lt;div class="modal-image-container margin-b-10"&gt;
+&lt;img
+class="responsive-img"
+src="/assets/images/lansdscape.jpg"
+loading
+/&gt;
+&lt;/div&gt;
+&lt;p class="margin-t-5"&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="modal-foot margin-t-5"&gt;
+&lt;button class="btn btn-accented"&gt;Shop&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+ </code></pre>
+            <h2 class="component-title margin-t-2r">Live demo</h2>
+            <div class="modal-container">
+              <div class="modal shadow padding-1r">
+                <button class="btn btn-float modal-close-btn">
+                  <span class="fa-solid fa-xmark"></span>
+                </button>
+                <div class="modal-head margin-t-b-5">
+                  <h1 class="modal-heading">Diwali Sale</h1>
+                </div>
+                <div class="modal-content margin-b-10 padding-1r">
+                  <p class="medium-text muted-text-color">
+                    Hurry!!! limited time deal on all products.
+                  </p>
+                </div>
+                <div class="modal-foot margin-t-5">
+                  <button class="btn btn-accented">Shop</button>
+                </div>
+              </div>
+            </div>
+            <section class="container margin-t-b-2r">
+              <button class="btn btn-secondary modal-btn">modal</button>
+            </section>
+          </div>
+
+          <!----------------------- Navigation ------------------------->
+          <div
+            id="navigation-section"
+            class="component-section navigation-section margin-t-2r"
+          >
+            <h1 class="component-title">Navigation</h1>
+            <p class="description margin-t-1r">
+              The navigation component is found everywhere, it can be simple
+              with just a logo and few buttons or it can be complex with a logo,
+              a search container ,buttons dropdown menus etc. In order to use
+              the navigation bar we apply the
+              <span class="secondary-text-color">.navbar</span> class to header.
+            </p>
+            <section class="container margin-t-b-2r">
+              <header class="navbar shadow margin-b-1r">
+                <div class="logo-container secondary-text-color">
+                  <h2>Navbar</h2>
+                </div>
+                <div class="search-container">
+                  <input class="textbox" type="text" />
+                  <button class="btn btn-only-icon btn-square">
+                    <span class="fa-solid fa-magnifying-glass"></span>
+                  </button>
+                </div>
+                <nav class="navbar-menu">
+                  <ul class="navbar-list list-style-none">
+                    <li class="navbar-item">
+                      <a href="#" class="navbar-link btn btn-only-icon"
+                        ><span class="fas fa-shopping-cart"></span
+                      ></a>
+                    </li>
+                    <li class="navbar-item">
+                      <a href="#" class="navbar-link btn">Login</a>
+                    </li>
+                    <li class="navbar-item">
+                      <a href="#" class="navbar-link btn">Sign up</a>
+                    </li>
+                    <li class="navbar-item hamburger-icon">
+                      <a href="#" class="navbar-link btn"
+                        ><span class="fa-solid fa-bars"></span
+                      ></a>
+                    </li>
+                  </ul>
+                </nav>
+              </header>
+            </section>
+            <pre><code class="language-html">
+  &lt;header class="navbar shadow margin-b-1r"&gt;
+    &lt;div class="logo-container secondary-text-color"&gt;
+      &lt;h2&gt;Navbar&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class="search-container"&gt;
+      &lt;input class="textbox" type="text" /&gt;
+      &lt;button class="btn btn-only-icon btn-square"&gt;
+        &lt;span class="fa-solid fa-magnifying-glass"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;nav class="navbar-menu"&gt;
+      &lt;ul class="navbar-list list-style-none"&gt;
+        &lt;li class="navbar-item"&gt;
+          &lt;a href="#" class="navbar-link btn btn-only-icon"
+            &gt;&lt;span class="fas fa-shopping-cart"&gt;&lt;/span
+          &gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="navbar-item"&gt;
+          &lt;a href="#" class="navbar-link btn"&gt;Login&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="navbar-item"&gt;
+          &lt;a href="#" class="navbar-link btn"&gt;Sign up&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="navbar-item hamburger-icon"&gt;
+          &lt;a href="#" class="navbar-link btn"&gt;&lt;span class="fa-solid fa-bars"&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+</code></pre>
+            <p class="description margin-t-2r">
+              In order to use a simple navigation we can remove the
+              search-container and apply
+              <span class="secondary-text-color">.navbar .navbar-simple </span>
+              class.
+            </p>
+            <section class="container margin-t-b-2r">
+              <header class="navbar navbar-simple shadow">
+                <div class="logo-container secondary-text-color">
+                  <h2>Navbar</h2>
+                </div>
+
+                <nav class="navbar-menu">
+                  <ul class="navbar-list list-style-none">
+                    <li class="navbar-item">
+                      <a href="#" class="navbar-link btn btn-only-icon"
+                        ><span class="fas fa-shopping-cart"></span
+                      ></a>
+                    </li>
+                    <li class="navbar-item">
+                      <a href="#" class="navbar-link btn">Login</a>
+                    </li>
+                    <li class="navbar-item">
+                      <a href="#" class="navbar-link btn">Sign up</a>
+                    </li>
+                    <li class="navbar-item hamburger-icon">
+                      <a href="#" class="navbar-link btn"
+                        ><span class="fa-solid fa-bars"></span
+                      ></a>
+                    </li>
+                  </ul>
+                </nav>
+              </header>
+            </section>
+            <pre><code class="language-html">
+  &lt;header class="navbar shadow margin-b-1r"&gt;
+    &lt;div class="logo-container secondary-text-color"&gt;
+      &lt;h2&gt;Navbar&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;nav class="navbar-menu"&gt;
+      &lt;ul class="navbar-list list-style-none"&gt;
+        &lt;li class="navbar-item"&gt;
+          &lt;a href="#" class="navbar-link btn btn-only-icon"
+            &gt;&lt;span class="fas fa-shopping-cart"&gt;&lt;/span
+          &gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="navbar-item"&gt;
+          &lt;a href="#" class="navbar-link btn"&gt;Login&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="navbar-item"&gt;
+          &lt;a href="#" class="navbar-link btn"&gt;Sign up&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="navbar-item hamburger-icon"&gt;
+          &lt;a href="#" class="navbar-link btn"&gt;&lt;span class="fa-solid fa-bars"&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+</code></pre>
+          </div>
+
+          <!------------------ Rating -------------------------------->
+          <div
+            id="rating-section"
+            class="rating-section component-section modal-section margin-t-2r"
+          >
+            <h1 class="component-title">Rating</h1>
+            <p class="description margin-t-1r">
+              Ratings can be used in any ecommerce sites. To start using it add
+              <span class="secondary-text-color">.rating-container</span> class
+              to parent container and give
+              <span class="secondary-text-color">.rating-element</span> class to
+              child element.
+            </p>
+            <section class="container margin-t-b-2r">
+              <div class="rating-container">
+                <span
+                  class="rating-element active fa-solid fa-star muted-text-color"
+                ></span>
+                <span
+                  class="rating-element active fa-solid fa-star muted-text-color"
+                ></span>
+                <span
+                  class="rating-element fa-solid fa-star muted-text-color"
+                ></span>
+                <span
+                  class="rating-element fa-solid fa-star muted-text-color"
+                ></span>
+                <span
+                  class="rating-element fa-solid fa-star muted-text-color"
+                ></span>
+              </div>
+            </section>
+
+            <pre><code class="layout-html">
+&lt;div class="rating-container"&gt;
+ &lt;span class="rating-element active fa-solid fa-star muted-text-color"&gt;&lt;/span&gt;
+ &lt;span class="rating-element active fa-solid fa-star muted-text-color"&gt;&lt;/span&gt;
+ &lt;span class="rating-element fa-solid fa-star muted-text-color"&gt;&lt;/span&gt;
+ &lt;span class="rating-element fa-solid fa-star muted-text-color"&gt;&lt;/span&gt;
+ &lt;span class="rating-element fa-solid fa-star muted-text-color"&gt;&lt;/span&gt;
+&lt;/div&gt;
+           </code></pre>
+          </div>
+
+          <!----------------------------Snackbar--------------------------->
+          <div
+            id="snackbar-section"
+            class="component-section snackbar-section margin-t-2r"
+          >
+            <h1 class="component-title">Snackbar</h1>
+            <p class="description margin-t-1r">
+              Snackbar can be used as popup messages. Snackbar can be primary,
+              secondary, warning and error. To start using snackbar apply
+              <span class="secondary-text-color">.snackbar</span> class. To
+              style snackbar add the following classes :
+            </p>
+            <p class="description margin-t-1r">
+              To use primary snackbar apply
+              <span class="secondary-text-color"
+                >.snackbar .snackbar-primary</span
+              >
+              class.
+            </p>
+            <p class="description">
+              To use secondary snackbar apply
+              <span class="secondary-text-color"
+                >.snackbar .snackbar-secondary</span
+              >
+              class.
+            </p>
+            <p class="description">
+              To use warning snackbar apply
+              <span class="secondary-text-color"
+                >.snackbar .snackbar-accent</span
+              >
+              class.
+            </p>
+            <p class="description">
+              To use error snackbar apply
+              <span class="secondary-text-color"
+                >.snackbar .snackbar-error</span
+              >
+              class.
+            </p>
+            <section class="container vertical-container margin-t-b-2r">
+              <div class="snackbar snackbar-primary">
+                <p class="snackbar-content">This is a snackbar</p>
+              </div>
+              <div class="snackbar snackbar-secondary">
+                <p class="snackbar-content">
+                  This is a snackbar with close button
+                </p>
+                <button
+                  class="btn btn-only-icon btn-link-accented snackbar-retry-btn"
+                >
+                  <span class="fa-solid fa-arrow-rotate-right snack"></span>
+                </button>
+                <button
+                  class="btn btn-only-icon btn-link-accented snackbar-close-btn"
+                >
+                  <span class="fa-solid fa-xmark"></span>
+                </button>
+              </div>
+              <div class="snackbar snackbar-accent">
+                <p class="snackbar-content">
+                  This is a snackbar with close button
+                </p>
+                <button class="btn btn-only-icon snackbar-close-btn">
+                  <span class="fa-solid fa-xmark"></span>
+                </button>
+              </div>
+              <div class="snackbar snackbar-error">
+                <p class="snackbar-content">This is a error snackbar</p>
+              </div>
+            </section>
+            <pre><code class="language-html">
+&lt;div class="snackbar snackbar-primary"&gt;
+  &lt;p class="snackbar-content"&gt;This is a snackbar&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="snackbar snackbar-secondary"&gt;
+  &lt;p class="snackbar-content"&gt;
+    This is a snackbar with close button
+  &lt;/p&gt;
+  &lt;button class="btn btn-only-icon btn-link-accented snackbar-retry-btn"&gt;
+    &lt;span class="fa-solid fa-arrow-rotate-right snack"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class="btn btn-only-icon btn-link-accented snackbar-close-btn"&gt;
+    &lt;span class="fa-solid fa-xmark"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="snackbar snackbar-accent"&gt;
+  &lt;p class="snackbar-content"&gt;
+    This is a snackbar with close button
+  &lt;/p&gt;
+  &lt;button class="btn btn-only-icon snackbar-close-btn"&gt;
+    &lt;span class="fa-solid fa-xmark"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="snackbar snackbar-error"&gt;
+  &lt;p class="snackbar-content"&gt;This is a error snackbar&lt;/p&gt;
+&lt;/div&gt;              
+            </code></pre>
+            <h2 class="component-title margin-t-1r">Live Demo</h2>
+            <section class="container margin-t-b-2r">
+              <button class="btn btn-primary snackbar-left-btn margin-5">
+                Snackbar left
+              </button>
+              <button class="btn btn-primary snackbar-center-btn margin-5">
+                Snackbar center
+              </button>
+              <button class="btn btn-primary snackbar-right-btn margin-5">
+                Snackbar right
+              </button>
+            </section>
+            <div class="snackbar-container">
+              <div class="snackbar snackbar-accent">
+                <p class="snackbar-content">This is a snackbar</p>
+              </div>
+            </div>
+
+            <p class="description margin-t-1r">
+              To position snackbar to left apply
+              <span class="secondary-text-color">.snackbar-left</span> class.
+            </p>
+            <p class="description">
+              To position snackbar to center apply
+              <span class="secondary-text-color">.snackbar-center</span> class.
+            </p>
+            <p class="description margin-b-2r">
+              To position snackbar to right apply
+              <span class="secondary-text-color">.snackbar-right</span> class.
+            </p>
+            <pre><code class="language-html">
+&lt;div class="snackbar snackbar-accent snackbar-left"&gt;
+  &lt;p class="snackbar-content"&gt;This is a snackbar&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="snackbar snackbar-accent snackbar-center"&gt;
+  &lt;p class="snackbar-content"&gt;This is a snackbar&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="snackbar snackbar-accent snackbar-right"&gt;
+  &lt;p class="snackbar-content"&gt;This is a snackbar&lt;/p&gt;
+&lt;/div&gt;
+            </code></pre>
+          </div>
+
+          <!--------------------Typography ---------------------------->
+          <div
+            id="typography-section"
+            class="typography-section component-section margin-t-2r"
+          >
+            <h1 class="component-title">Typography</h1>
+            <p class="description margin-t-1r">
+              Font require various styling, each style can set a different
+              hierarchical.To style the fonts easily you can use the following
+              classes.
+            </p>
+            <h2 class="component-title margin-t-1r">Heading</h2>
+            <p class="description margin-t-1r">
+              To use heading style to different elements you can use the
+              <span class="secondary-text-color"
+                >.h1, .h2, .h3, .h4, .h5, .h6</span
+              >
+              class.
+            </p>
+            <ul class="description margin-t-1r list-style-none">
+              <li class="margin-t-5">
+                <span class="secondary-text-color">.h1</span> is of
+                <span class="secondary-text-color">64px</span>
+              </li>
+              <li class="margin-t-5">
+                <span class="secondary-text-color">.h2</span> is of
+                <span class="secondary-text-color">48px</span>
+              </li>
+              <li class="margin-t-5">
+                <span class="secondary-text-color">.h3</span> is of
+                <span class="secondary-text-color">32px</span>
+              </li>
+              <li class="margin-t-5">
+                <span class="secondary-text-color">.h4</span> is of
+                <span class="secondary-text-color">16px</span>
+              </li>
+              <li class="margin-t-5">
+                <span class="secondary-text-color">.h5</span> is of
+                <span class="secondary-text-color">12.8px</span>
+              </li>
+              <li class="margin-t-5">
+                <span class="secondary-text-color">.h6</span> is of
+                <span class="secondary-text-color">12px</span>
+              </li>
+            </ul>
+            <section class="container vertical-container margin-t-b-2r">
+              <div class="h1">heading-1</div>
+              <div class="h2">heading-2</div>
+              <div class="h3">heading-3</div>
+              <div class="h4">heading-4</div>
+              <div class="h5">heading-5</div>
+              <div class="h6">heading-6</div>
+            </section>
+            <pre><code class="layout-html">
+&lt;div class="h1"&gt;heading-1&lt;/div&gt;
+&lt;div class="h2"&gt;heading-2&lt;/div&gt;
+&lt;div class="h3"&gt;heading-3&lt;/div&gt;
+&lt;div class="h4"&gt;heading-4&lt;/div&gt;
+&lt;div class="h5"&gt;heading-5&lt;/div&gt;
+&lt;div class="h6"&gt;heading-6&lt;/div&gt;
+           </code></pre>
+            <h2 class="component-title margin-t-1r">Font sizes</h2>
+            <p class="description margin-t-1r">
+              To use font of different sizes you can use the
+              <span class="secondary-text-color"
+                >.xlarge-text, .large-text, .medium-text, .small-text,
+                .xsmall-text</span
+              >
+              class.
+            </p>
+            <ul class="description margin-t-1r list-style-none">
+              <li class="margin-t-5">
+                <span class="secondary-text-color">.xlarge-text</span> is of
+                <span class="secondary-text-color">40px</span>
+              </li>
+              <li class="margin-t-5">
+                <span class="secondary-text-color">.large-text</span> is of
+                <span class="secondary-text-color">32px</span>
+              </li>
+              <li class="margin-t-5">
+                <span class="secondary-text-color">.medium-text</span> is of
+                <span class="secondary-text-color">24px</span>
+              </li>
+              <li class="margin-t-5">
+                <span class="secondary-text-color">.small-text</span> is of
+                <span class="secondary-text-color">14px</span>
+              </li>
+              <li class="margin-t-5">
+                <span class="secondary-text-color">.xsmall-text</span> is of
+                <span class="secondary-text-color">12px</span>
+              </li>
+            </ul>
+            <section class="container vertical-container margin-t-b-2r">
+              <div class="xlarge-text">Extra Large text</div>
+              <div class="large-text">Large Text</div>
+              <div class="medium-text">Medium Text</div>
+              <div class="small-text">small text</div>
+              <div class="xsmall-text">extra small text</div>
+            </section>
+            <pre><code class="layout-html">
+&lt;div class="xlarge-text"&gt;Extra Large text&lt;/div&gt;
+&lt;div class="large-text"&gt;Large Text&lt;/div&gt;
+&lt;div class="medium-text"&gt;Medium Text&lt;/div&gt;
+&lt;div class="small-text"&gt;small text&lt;/div&gt;
+&lt;div class="xsmall-text"&gt;extra small text&lt;/div&gt;
+            </code></pre>
+            <h2 class="component-title margin-t-1r">Font decoration</h2>
+            <p class="description margin-t-1r">
+              To use different decoration on font you can use the
+              <span class="secondary-text-color"
+                >.strike-text, .underline-text, .primary-text-color,
+                .secondary-text-color, .accent-text-color,
+                .muted-text-color</span
+              >
+              class.
+            </p>
+            <section class="container vertical-container margin-t-b-2r">
+              <div class="xlarge-text strike-text">Strike through text</div>
+
+              <div class="medium-text underline-text">
+                This text has undeline
+              </div>
+
+              <div class="medium-text primary-text-color">
+                This text has primary text color.
+              </div>
+              <div class="medium-text secondary-text-color">
+                This text has secondary text color.
+              </div>
+              <div class="medium-text accent-text-color">
+                This text has accent text color.
+              </div>
+              <div class="medium-text muted-text-color">
+                This text has accent text color.
+              </div>
+            </section>
+            <pre><code class="layout-html">
+&lt;div class="xlarge-text strike-text"&gt;Strike through text&lt;/div&gt;
+&lt;div class="medium-text underline-text"&gt;This text has undeline&lt;/div&gt;
+&lt;div class="medium-text primary-text-color"&gt;This text has primary text color.&lt;/div&gt;
+&lt;div class="medium-text secondary-text-color"&gt;This text has secondary text color.&lt;/div&gt;
+&lt;div class="medium-text accent-text-color"&gt;This text has accent text color.&lt;/div&gt;
+&lt;div class="medium-text muted-text-color"&gt;This text has accent text color.&lt;/div&gt;
+            </code></pre>
+            <h2 class="component-title margin-t-1r">Font position</h2>
+            <p class="description margin-t-1r">
+              To position text you can use the
+              <span class="secondary-text-color"
+                >.text-left, .text-center, .text-right</span
+              >
+              class.
+            </p>
+            <section class="container vertical-container margin-t-b-2r">
+              <div class="small-text text-center">
+                This text is center aligned
+              </div>
+              <div class="small-text text-right">
+                This text is right aligned
+              </div>
+              <div class="small-text text-left">This text is left aligned</div>
+            </section>
+            <pre><code class="layout-html">
+&lt;div class="small-text text-center"&gt;This text is center aligned&lt;/div&gt;
+&lt;div class="small-text text-right"&gt;This text is right aligned&lt;/div&gt;
+&lt;div class="small-text text-left"&gt;This text is left aligned&lt;/div&gt;
+            </code></pre>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
